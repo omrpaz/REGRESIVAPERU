@@ -16,6 +16,7 @@
 <!-- Favicon -->
 <link rel="icon" href="https://raw.githubusercontent.com/omrpaz/REGRESIVAPERU/main/img/regresiva-emblema.png?raw=true">
 
+<!-- Estilos -->
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior: smooth; }
@@ -66,13 +67,11 @@ iframe { width:100%; max-width:660px; height:380px; border:none; }
 .videos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
 .video-item iframe { width:100%; height:200px; }
 
-/* Footer social icons */
+/* Footer social icons solo iconos */
 .footer-socials { display:flex; justify-content:center; gap:15px; margin-top:15px; flex-wrap:wrap; }
-.footer-socials a { display:inline-block; font-size:0.9rem; padding:6px 12px; border-radius:50px; background:#b30000; color:#fff; transition:0.3s; }
+.footer-socials a { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; font-size:1.2rem; border-radius:50%; background:#b30000; color:#fff; transition:0.3s; text-decoration:none; }
 .footer-socials a.whatsapp { background:#25D366; }
 .footer-socials a:hover { opacity:0.8; }
-
-footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
 
 /* Responsive */
 @media (max-width:768px){
@@ -84,6 +83,8 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
   .nav-links a { font-size:0.75rem; margin:3px 6px; }
 }
 </style>
+<!-- Usamos iconos de Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -132,7 +133,7 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
   <p>Escucha nuestro último disco <strong>"R.E.D"</strong> y otras canciones:</p>
 
   <!-- Disco RED Bandcamp -->
-  <div class="musica-embed">
+  <div class="musica-embed" style="text-align:center;">
     <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank">
       <img src="https://f4.bcbits.com/img/a2870835096_10.jpg" alt="Portada R.E.D" style="width:280px; max-width:80%; border-radius:8px;">
     </a>
@@ -140,16 +141,15 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
     <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank" class="bandcamp-btn">Escucha R.E.D en Bandcamp</a>
   </div>
 
-  <!-- Spotify embed -->
+  <!-- Spotify embed correcto -->
   <div class="musica-embed">
-    <iframe src="https://open.spotify.com/artist/17qr9zMkyoXnJ9CqcVoPLt?si=vlQeoo4PTAui8uu-Gidhxg" allow="encrypted-media" title="Artista Regresiva"></iframe>
+    <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt?si=vlQeoo4PTAui8uu-Gidhxg" allow="encrypted-media" title="Regresiva Spotify"></iframe>
   </div>
 
   <!-- YouTube Music botón al canal -->
   <div style="text-align:center; margin-top:20px;">
     <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" class="btn">Ver canal completo en YouTube Music</a>
   </div>
-
 </section>
 
 <div class="divider"></div>
@@ -184,16 +184,15 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
   <h2>Contacto</h2>
   <p>Para prensa, shows y comunicación directa:</p>
   <p><strong>Email:</strong> contacto@regresivaperu.com</p>
-  <a href="https://wa.me/51906413899" class="footer-socials whatsapp" target="_blank">WhatsApp</a>
+  <a href="https://wa.me/51906413899" class="footer-socials whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </section>
 
-<!-- Footer redes sociales -->
+<!-- Footer con solo iconos -->
 <footer>
   <div class="footer-socials">
-    <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank">TikTok</a>
-    <a href="https://api.whatsapp.com/send?text=Hola,%20te%20comparto%20esta%20interesante%20banda%20de%20rock%20R.E.G.R.E.S.I.V.A%20https://www.regresivaperu.com" target="_blank">Compartir</a>
+    <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
   </div>
   <p>© Regresiva – Lima, Perú</p>
 </footer>
