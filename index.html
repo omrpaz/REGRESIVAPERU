@@ -191,14 +191,47 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
 </section>
 
 <!-- Footer con solo iconos -->
+<!-- Footer con solo iconos visibles -->
 <footer>
   <div class="footer-socials">
-    <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank" title="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://wa.me/51906413899" target="_blank" class="whatsapp" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
   </div>
   <p>© Regresiva – Lima, Perú</p>
 </footer>
 
-</body>
-</html>
+<!-- CSS para los iconos (agregar en <style> si no está) -->
+<style>
+.footer-socials {
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:15px;
+  flex-wrap:wrap;
+}
+.footer-socials a {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  font-size:1.2rem;
+  border-radius:50%;
+  color:#fff;
+  text-decoration:none;
+  background:#b30000; /* fondo rojo general */
+  transition:0.3s;
+}
+.footer-socials a.whatsapp { background:#25D366; } /* verde WhatsApp */
+.footer-socials a:hover { opacity:0.8; }
+</style>
