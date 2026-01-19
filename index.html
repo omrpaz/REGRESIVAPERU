@@ -53,6 +53,8 @@ section p { max-width:800px; color:#ccc; margin-bottom:25px; }
 /* Música */
 .musica-embed { margin-bottom:30px; }
 iframe { width:100%; max-width:660px; height:380px; border:none; }
+.bandcamp-btn { display:inline-block; padding:12px 28px; background:#b30000; color:#fff; font-weight:bold; border-radius:6px; text-decoration:none; margin-top:15px; transition:0.3s; }
+.bandcamp-btn:hover { background:#e60000; }
 
 /* Videos grid */
 .videos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
@@ -136,22 +138,25 @@ function toggleMenu() {
   <h2>Música</h2>
   <p>Escucha nuestro último disco <strong>"R.E.D"</strong> y otras canciones:</p>
 
-  <!-- Disco RED (Bandcamp embed con portada y botón) -->
-  <div class="musica-embed">
-    <iframe style="border:0; width:100%; height:470px;" src="https://bandcamp.com/EmbeddedPlayer/album=0000000000/size=large/bgcol=000000/linkcol=b30000/tracklist=false/artwork=small/transparent=true/" seamless>
-      <a href="https://regresivaband.bandcamp.com/album/r-e-d">Escucha R.E.D en Bandcamp</a>
-    </iframe>
+  <!-- Disco RED Bandcamp con portada y botón -->
+  <div style="text-align:center;">
+    <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank">
+      <img src="https://f4.bcbits.com/img/a2870835096_10.jpg" alt="Portada R.E.D" style="width:280px; max-width:80%; border-radius:8px;">
+    </a>
+    <br>
+    <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank" class="bandcamp-btn">Escucha R.E.D en Bandcamp</a>
   </div>
 
-  <!-- Embed general del artista (Spotify) -->
+  <!-- Spotify embed -->
   <div class="musica-embed">
     <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt" allow="encrypted-media" title="Artista Regresiva"></iframe>
   </div>
 
-  <!-- YouTube Music Embed -->
-  <div class="musica-embed">
-    <iframe src="https://music.youtube.com/embed?listType=user_uploads&list=UCNfp7-vde13HedfsOqo2Vaw" allow="encrypted-media" title="YouTube Music Regresiva"></iframe>
+  <!-- Botón al canal completo de YouTube Music -->
+  <div style="text-align:center; margin-top:20px;">
+    <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" class="btn">Ver canal completo en YouTube Music</a>
   </div>
+
 </section>
 
 <div class="divider"></div>
@@ -168,9 +173,6 @@ function toggleMenu() {
       <iframe src="https://www.youtube.com/embed/J2Lsm-c2ITA" allowfullscreen title="Video J2Lsm-c2ITA"></iframe>
     </div>
   </div>
-  <p style="text-align:center; margin-top:15px;">
-    <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" class="btn">Ver canal completo de Regresiva</a>
-  </p>
 </section>
 
 <div class="divider"></div>
