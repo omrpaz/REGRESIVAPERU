@@ -16,8 +16,8 @@
 <!-- Favicon -->
 <link rel="icon" href="https://raw.githubusercontent.com/omrpaz/REGRESIVAPERU/main/img/regresiva-emblema.png?raw=true">
 
-<!-- Font Awesome para iconos -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-pb2fFJ3+n1pVvZOS0Yaf5FpG8VQeBnvbQkP6z+rV9uW5OaF7uhw1RvD1C/kFV+Yl7BqXQ1dDqODFjlq0LZtE5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Estilos -->
 <style>
@@ -29,7 +29,7 @@ body { font-family: Arial, Helvetica, sans-serif; background:#000; color:#e5e5e5
 a { color:#b30000; text-decoration:none; }
 a:hover { text-decoration: underline; }
 
-/* Navbar fijo y compacto */
+/* Navbar fijo */
 nav {
   position:fixed;
   top:0;
@@ -64,7 +64,7 @@ section p { max-width:800px; color:#ccc; margin-bottom:25px; }
 .musica-embed { margin-bottom:30px; text-align:center; }
 .bandcamp-btn { display:inline-block; padding:12px 28px; background:#b30000; color:#fff; font-weight:bold; border-radius:6px; text-decoration:none; margin-top:15px; transition:0.3s; }
 .bandcamp-btn:hover { background:#e60000; }
-iframe { width:100%; max-width:660px; height:380px; border:none; }
+iframe { width:100%; max-width:660px; border:none; }
 
 /* Videos grid */
 .videos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
@@ -72,7 +72,10 @@ iframe { width:100%; max-width:660px; height:380px; border:none; }
 
 /* Footer social icons solo iconos */
 .footer-socials { display:flex; justify-content:center; gap:15px; margin-top:15px; flex-wrap:wrap; }
-.footer-socials a { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; font-size:1.2rem; border-radius:50%; background:#b30000; color:#fff; transition:0.3s; text-decoration:none; }
+.footer-socials a { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; font-size:1.2rem; border-radius:50%; color:#fff; text-decoration:none; transition:0.3s; }
+.footer-socials a.facebook { background:#3b5998; }
+.footer-socials a.instagram { background:#E1306C; }
+.footer-socials a.tiktok { background:#000000; }
 .footer-socials a.whatsapp { background:#25D366; }
 .footer-socials a:hover { opacity:0.8; }
 
@@ -190,48 +193,16 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
   <a href="https://wa.me/51906413899" target="_blank" class="footer-socials whatsapp"><i class="fab fa-whatsapp"></i></a>
 </section>
 
-<!-- Footer con solo iconos -->
-<!-- Footer con solo iconos visibles -->
+<!-- Footer con iconos reales -->
 <footer>
   <div class="footer-socials">
-    <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank" title="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank" title="TikTok">
-      <i class="fab fa-tiktok"></i>
-    </a>
-    <a href="https://wa.me/51906413899" target="_blank" class="whatsapp" title="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+    <a href="https://wa.me/51906413899" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
   </div>
   <p>© Regresiva – Lima, Perú</p>
 </footer>
 
-<!-- CSS para los iconos (agregar en <style> si no está) -->
-<style>
-.footer-socials {
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  margin-top:15px;
-  flex-wrap:wrap;
-}
-.footer-socials a {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:40px;
-  height:40px;
-  font-size:1.2rem;
-  border-radius:50%;
-  color:#fff;
-  text-decoration:none;
-  background:#b30000; /* fondo rojo general */
-  transition:0.3s;
-}
-.footer-socials a.whatsapp { background:#25D366; } /* verde WhatsApp */
-.footer-socials a:hover { opacity:0.8; }
-</style>
+</body>
+</html>
