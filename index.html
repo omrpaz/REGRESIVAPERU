@@ -16,32 +16,38 @@
 <!-- Favicon -->
 <link rel="icon" href="https://raw.githubusercontent.com/omrpaz/REGRESIVAPERU/main/img/regresiva-emblema.png?raw=true">
 
-<!-- Estilos -->
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: Arial, Helvetica, sans-serif; background:#000; color:#e5e5e5; line-height:1.6; }
 
+/* Links */
 a { color:#b30000; text-decoration:none; }
 a:hover { text-decoration: underline; }
 
-/* Navbar */
-nav { position:fixed; top:0; width:100%; background:#111; display:flex; justify-content:center; align-items:center; z-index:1000; padding:10px 0; }
+/* Navbar fijo y compacto */
+nav {
+  position:fixed;
+  top:0;
+  width:100%;
+  background: rgba(17,17,17,0.9);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+  padding:8px 0;
+}
 .nav-links { display:flex; flex-wrap:wrap; justify-content:center; }
-.nav-links a { margin:5px 15px; color:#e5e5e5; font-weight:bold; text-transform:uppercase; font-size:0.9rem; }
+.nav-links a { margin:4px 10px; color:#e5e5e5; font-weight:bold; text-transform:uppercase; font-size:0.85rem; }
 .nav-links a:hover { color:#b30000; }
 
-/* Hamburger */
-.hamburger { display:none; flex-direction:column; cursor:pointer; margin-left:10px; }
-.hamburger div { width:25px; height:3px; background:#fff; margin:4px 0; transition:0.3s; }
-
 /* Hero */
-header { min-height:100vh; background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('img/regresiva-hero.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; padding:80px 20px 40px 20px; }
+header { min-height:100vh; background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('img/regresiva-hero.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; padding:100px 20px 40px 20px; }
 header .escudo { width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 20px auto; }
 header img.logo { max-width:360px; width:80%; margin-bottom:25px; }
 header h1 { font-size:2.2rem; letter-spacing:2px; margin-bottom:15px; }
 header p { max-width:700px; margin:auto; font-size:1.1rem; color:#ccc; }
-.btn { display:inline-block; margin-top:25px; padding:14px 38px; border:2px solid #b30000; color:#b30000; font-weight:bold; letter-spacing:1px; transition: all .3s ease; }
+.btn { display:inline-block; margin-top:25px; padding:12px 32px; border:2px solid #b30000; color:#b30000; font-weight:bold; letter-spacing:1px; transition: all .3s ease; border-radius:5px; }
 .btn:hover { background:#b30000; color:#000; }
 
 /* Secciones */
@@ -51,10 +57,10 @@ section p { max-width:800px; color:#ccc; margin-bottom:25px; }
 .divider { height:1px; background:#222; margin:0; }
 
 /* Música */
-.musica-embed { margin-bottom:30px; }
-iframe { width:100%; max-width:660px; height:380px; border:none; }
+.musica-embed { margin-bottom:30px; text-align:center; }
 .bandcamp-btn { display:inline-block; padding:12px 28px; background:#b30000; color:#fff; font-weight:bold; border-radius:6px; text-decoration:none; margin-top:15px; transition:0.3s; }
 .bandcamp-btn:hover { background:#e60000; }
+iframe { width:100%; max-width:660px; height:380px; border:none; }
 
 /* Videos grid */
 .videos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
@@ -74,28 +80,15 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
   section { padding:70px 20px; }
   iframe { height:300px; }
   .video-item iframe { height:180px; }
-  nav { flex-direction:column; padding:15px 0; }
-  .nav-links { display:none; flex-direction:column; width:100%; text-align:center; background:#111; }
-  .nav-links.active { display:flex; }
-  .nav-links a { margin:10px 0; }
-  .hamburger { display:flex; }
+  nav { padding:8px 0; }
+  .nav-links a { font-size:0.75rem; margin:3px 6px; }
 }
 </style>
-
-<script>
-function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('active');
-}
-</script>
-
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar fijo -->
 <nav>
-  <div class="hamburger" onclick="toggleMenu()">
-    <div></div><div></div><div></div>
-  </div>
   <div class="nav-links">
     <a href="#banda">Banda</a>
     <a href="#musica">Música</a>
@@ -138,8 +131,8 @@ function toggleMenu() {
   <h2>Música</h2>
   <p>Escucha nuestro último disco <strong>"R.E.D"</strong> y otras canciones:</p>
 
-  <!-- Disco RED Bandcamp con portada y botón -->
-  <div style="text-align:center;">
+  <!-- Disco RED Bandcamp -->
+  <div class="musica-embed">
     <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank">
       <img src="https://f4.bcbits.com/img/a2870835096_10.jpg" alt="Portada R.E.D" style="width:280px; max-width:80%; border-radius:8px;">
     </a>
@@ -152,7 +145,7 @@ function toggleMenu() {
     <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt" allow="encrypted-media" title="Artista Regresiva"></iframe>
   </div>
 
-  <!-- Botón al canal completo de YouTube Music -->
+  <!-- YouTube Music botón al canal -->
   <div style="text-align:center; margin-top:20px;">
     <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" class="btn">Ver canal completo en YouTube Music</a>
   </div>
@@ -194,7 +187,7 @@ function toggleMenu() {
   <a href="https://wa.me/51906413899" class="footer-socials whatsapp" target="_blank">WhatsApp</a>
 </section>
 
-<!-- Footer con redes sociales -->
+<!-- Footer redes sociales -->
 <footer>
   <div class="footer-socials">
     <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank">Facebook</a>
