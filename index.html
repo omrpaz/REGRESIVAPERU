@@ -9,12 +9,12 @@
 <!-- Open Graph -->
 <meta property="og:title" content="Regresiva | Rock de protesta desde Perú">
 <meta property="og:description" content="Banda peruana de rock de protesta. Fuerza sonora, identidad y resistencia cultural.">
-<meta property="og:image" content="img/regresiva-hero.jpg">
+<meta property="og:image" content="https://f4.bcbits.com/img/a2870835096_10.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Favicon -->
-<link rel="icon" href="img/regresiva-logo.png">
+<link rel="icon" href="https://github.com/omrpaz/REGRESIVAPERU/blob/main/img/regresiva-emblema.png">
 
 <!-- Estilos -->
 <style>
@@ -36,9 +36,9 @@ nav { position:fixed; top:0; width:100%; background:#111; display:flex; justify-
 .hamburger div { width:25px; height:3px; background:#fff; margin:4px 0; transition:0.3s; }
 
 /* Hero */
-header { min-height:100vh; background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('img/regresiva-hero.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; padding:80px 20px 40px 20px; }
-header img { max-width:360px; width:80%; margin-bottom:25px; }
+header { min-height:100vh; background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('https://f4.bcbits.com/img/a2870835096_10.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; padding:80px 20px 40px 20px; }
 header .escudo { width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 20px auto; }
+header img.logo { max-width:360px; width:80%; margin-bottom:25px; }
 header h1 { font-size:2.2rem; letter-spacing:2px; margin-bottom:15px; }
 header p { max-width:700px; margin:auto; font-size:1.1rem; color:#ccc; }
 .btn { display:inline-block; margin-top:25px; padding:14px 38px; border:2px solid #b30000; color:#b30000; font-weight:bold; letter-spacing:1px; transition: all .3s ease; }
@@ -79,11 +79,9 @@ footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
 }
 </style>
 
-<!-- Script hamburguesa -->
 <script>
 function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('active');
+  document.querySelector('.nav-links').classList.toggle('active');
 }
 </script>
 
@@ -109,8 +107,8 @@ function toggleMenu() {
 <!-- Hero -->
 <header>
   <div>
-    <img src="img/escudo-rojo.png" alt="Escudo rojo Regresiva" class="escudo">
-    <img src="img/regresiva-logo.png" alt="Regresiva banda peruana de rock">
+    <img src="https://github.com/omrpaz/REGRESIVAPERU/blob/main/img/regresiva-emblema.png" alt="Escudo rojo Regresiva" class="escudo">
+    <img src="https://github.com/omrpaz/REGRESIVAPERU/blob/main/img/regresiva-emblema.png" alt="Regresiva logo" class="logo">
     <h1>ROCK DE PROTESTA DESDE PERÚ</h1>
     <p>
       REGRESIVA es una banda peruana de rock de protesta y resistencia cultural.
@@ -139,9 +137,9 @@ function toggleMenu() {
   <h2>Música</h2>
   <p>Escucha nuestro último disco <strong>"R.E.D"</strong> y otras canciones:</p>
 
-  <!-- Disco RED (Bandcamp embed) -->
+  <!-- Disco RED (Bandcamp embed con portada visible) -->
   <div class="musica-embed">
-    <iframe style="border:0; width:100%; height:120px;" src="https://bandcamp.com/EmbeddedPlayer/album=0000000000/size=large/bgcol=000000/linkcol=b30000/artwork=small/transparent=true/" seamless><a href="https://regresivaband.bandcamp.com/album/r-e-d">R.E.D on Bandcamp</a></iframe>
+    <iframe style="border:0; width:100%; height:470px;" src="https://bandcamp.com/EmbeddedPlayer/album=0000000000/size=large/bgcol=000000/linkcol=b30000/artwork=small/transparent=true/" seamless><a href="https://regresivaband.bandcamp.com/album/r-e-d">R.E.D on Bandcamp</a></iframe>
   </div>
 
   <!-- Embed general del artista (Spotify) -->
