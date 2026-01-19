@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regresiva | Banda peruana de rock de protesta</title>
+<meta name="description" content="Regresiva es una banda peruana de rock de protesta y resistencia cultural. Música pesada, mensaje directo y actitud independiente desde Lima, Perú.">
 
-  <title>Regresiva | Banda peruana de rock de protesta</title>
-  <meta name="description" content="Regresiva es una banda peruana de rock de protesta y resistencia cultural. Música pesada, mensaje directo y actitud independiente desde Lima, Perú.">
+<!-- Open Graph -->
+<meta property="og:title" content="Regresiva | Rock de protesta desde Perú">
+<meta property="og:description" content="Banda peruana de rock de protesta. Fuerza sonora, identidad y resistencia cultural.">
+<meta property="og:image" content="img/regresiva-hero.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Regresiva | Rock de protesta desde Perú">
-  <meta property="og:description" content="Banda peruana de rock de protesta. Fuerza sonora, identidad y resistencia cultural.">
-  <meta property="og:image" content="img/regresiva-hero.jpg">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+<!-- Favicon -->
+<link rel="icon" href="img/regresiva-logo.png">
 
-  <!-- Favicon -->
-  <link rel="icon" href="img/regresiva-logo.png">
+<!-- Estilos -->
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, Helvetica, sans-serif; background:#000; color:#e5e5e5; line-height:1.6; }
 
-  <!-- Estilos -->
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: Arial, Helvetica, sans-serif; background:#000; color:#e5e5e5; line-height:1.6; }
+a { color:#b30000; text-decoration:none; }
+a:hover { text-decoration: underline; }
 
-    a { color: #b30000; text-decoration:none; }
-    a:hover { text-decoration: underline; }
+/* Navbar */
+nav { position:fixed; top:0; width:100%; background:#111; display:flex; justify-content:center; z-index:1000; padding:10px 0; flex-wrap:wrap; }
+nav a { margin: 5px 15px; color:#e5e5e5; font-weight:bold; text-transform:uppercase; font-size:0.9rem; }
+nav a:hover { color:#b30000; }
 
-    /* Navbar */
-    nav { position:fixed; top:0; width:100%; background:#111; display:flex; justify-content:center; z-index:1000; padding:10px 0; }
-    nav a { margin: 0 20px; color:#e5e5e5; font-weight:bold; text-transform:uppercase; font-size:0.9rem; }
-    nav a:hover { color:#b30000; }
+/* Hero */
+header { min-height:100vh; background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('img/regresiva-hero.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; padding:80px 20px 40px 20px; }
+header img { max-width:360px; width:80%; margin-bottom:25px; }
+header .escudo { width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 20px auto; }
+header h1 { font-size:2.2rem; letter-spacing:2px; margin-bottom:15px; }
+header p { max-width:700px; margin:auto; font-size:1.1rem; color:#ccc; }
+.btn { display:inline-block; margin-top:25px; padding:14px 38px; border:2px solid #b30000; color:#b30000; font-weight:bold; letter-spacing:1px; transition: all .3s ease; }
+.btn:hover { background:#b30000; color:#000; }
 
-    /* Hero */
-    header { min-height:100vh; background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('img/regresiva-hero.jpg') center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; padding:40px 20px; }
-    header img { max-width:360px; width:80%; margin-bottom:25px; }
-    header h1 { font-size:2.2rem; letter-spacing:2px; margin-bottom:15px; }
-    header p { max-width:700px; margin:auto; font-size:1.1rem; color:#ccc; }
-    .btn { display:inline-block; margin-top:25px; padding:14px 38px; border:2px solid #b30000; color:#b30000; font-weight:bold; letter-spacing:1px; transition: all .3s ease; }
-    .btn:hover { background:#b30000; color:#000; }
+section { max-width:1100px; margin:auto; padding:90px 20px; }
+section h2 { font-size:2rem; margin-bottom:20px; text-transform:uppercase; letter-spacing:1px; }
+section p { max-width:800px; color:#ccc; margin-bottom:25px; }
+.divider { height:1px; background:#222; margin:0; }
 
-    section { max-width:1100px; margin:auto; padding:90px 20px; }
-    section h2 { font-size:2rem; margin-bottom:20px; text-transform:uppercase; letter-spacing:1px; }
-    section p { max-width:800px; color:#ccc; margin-bottom:25px; }
-    .divider { height:1px; background:#222; margin:0; }
+/* Música */
+.musica-embed { margin-bottom:30px; }
+iframe { width:100%; max-width:660px; height:380px; border:none; }
 
-    /* Música */
-    .musica-embed { margin-bottom:30px; }
-    iframe { width:100%; max-width:660px; height:380px; border:none; }
+/* Videos grid */
+.videos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
+.video-item iframe { width:100%; height:200px; }
 
-    /* Videos grid */
-    .videos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; }
-    .video-item iframe { width:100%; height:200px; }
+/* Footer social icons */
+.footer-socials { display:flex; justify-content:center; gap:15px; margin-top:15px; }
+.footer-socials a { display:inline-block; font-size:0.9rem; padding:6px 12px; border-radius:50px; background:#b30000; color:#fff; transition:0.3s; }
+.footer-socials a.whatsapp { background:#25D366; }
+.footer-socials a:hover { opacity:0.8; }
 
-    /* Social floating buttons */
-    .social-floating { position:fixed; right:20px; bottom:20px; display:flex; flex-direction:column; gap:10px; z-index:1000; }
-    .social-floating a { display:block; padding:10px 15px; border-radius:50px; font-weight:bold; text-align:center; color:#fff; background:#b30000; transition:0.3s; font-size:0.9rem; }
-    .social-floating a.whatsapp { background:#25D366; }
-    .social-floating a:hover { opacity:0.8; }
+footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
 
-    footer { text-align:center; padding:40px 20px; font-size:.9rem; color:#777; }
-
-    @media (max-width:768px) {
-      header h1 { font-size:1.8rem; }
-      section { padding:70px 20px; }
-      iframe { height:300px; }
-      .video-item iframe { height:180px; }
-    }
-  </style>
+@media (max-width:768px){
+  header h1 { font-size:1.8rem; }
+  section { padding:70px 20px; }
+  iframe { height:300px; }
+  .video-item iframe { height:180px; }
+  nav { flex-direction:column; padding:15px 0; }
+  nav a { margin:5px 10px; }
+}
+</style>
 </head>
 
 <body>
@@ -83,6 +85,9 @@
 <!-- Hero -->
 <header>
   <div>
+    <!-- Escudo rojo circular -->
+    <img src="img/escudo-rojo.png" alt="Escudo rojo Regresiva" class="escudo">
+    <!-- Logo -->
     <img src="img/regresiva-logo.png" alt="Regresiva banda peruana de rock">
     <h1>ROCK DE PROTESTA DESDE PERÚ</h1>
     <p>
@@ -110,11 +115,11 @@
 <!-- Música -->
 <section id="musica">
   <h2>Música</h2>
-  <p>Escucha nuestro último disco <strong>"Red"</strong> y otras canciones directamente desde Spotify y YouTube Music:</p>
+  <p>Escucha nuestro último disco <strong>"Red"</strong> y otras canciones:</p>
 
-  <!-- Embed del disco Red (Spotify) -->
+  <!-- Disco Red (Bandcamp) -->
   <div class="musica-embed">
-    <iframe src="https://open.spotify.com/embed/album/ULTIMODISCOID?utm_source=generator" allow="encrypted-media" title="Disco Red"></iframe>
+    <a href="https://regresiva.bandcamp.com/album/red" target="_blank" class="btn">Escuchar Disco Red en Bandcamp</a>
   </div>
 
   <!-- Embed general del artista (Spotify) -->
@@ -142,6 +147,9 @@
       <iframe src="https://www.youtube.com/embed/J2Lsm-c2ITA" allowfullscreen title="Video J2Lsm-c2ITA"></iframe>
     </div>
   </div>
+  <p style="text-align:center; margin-top:15px;">
+    <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" class="btn">Ver canal completo de Regresiva</a>
+  </p>
 </section>
 
 <div class="divider"></div>
@@ -160,19 +168,17 @@
   <h2>Contacto</h2>
   <p>Para prensa, shows y comunicación directa:</p>
   <p><strong>Email:</strong> contacto@regresivaperu.com</p>
-  <a href="https://wa.me/948127500" class="social-floating whatsapp" target="_blank">WhatsApp</a>
+  <a href="https://wa.me/51906413899" class="footer-socials whatsapp" target="_blank">WhatsApp</a>
 </section>
 
-<!-- Botones sociales flotantes -->
-<div class="social-floating">
-  <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank">Facebook</a>
-  <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank">Instagram</a>
-  <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank">TikTok</a>
-  <a href="https://api.whatsapp.com/send?text=Hola,%20te%20comparto%20esta%20interesante%20banda%20de%20rock%20R.E.G.R.E.S.I.V.A%20https://www.regresivaperu.com" target="_blank">Compartir WhatsApp</a>
-</div>
-
-<!-- Footer -->
+<!-- Footer con redes sociales -->
 <footer>
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/regresiva.banda?mibextid=ZbWKwL" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/regresivaband?igsh=MXE1Zmt1cmZmd3pxbA==" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@regresivaband?_t=8nJQ9mIALNF&_r=1" target="_blank">TikTok</a>
+    <a href="https://api.whatsapp.com/send?text=Hola,%20te%20comparto%20esta%20interesante%20banda%20de%20rock%20R.E.G.R.E.S.I.V.A%20https://www.regresivaperu.com" target="_blank">Compartir</a>
+  </div>
   <p>© Regresiva – Lima, Perú</p>
 </footer>
 
