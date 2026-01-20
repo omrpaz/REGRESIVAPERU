@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>REGRESIVA | Banda peruana de rock de protesta</title>
-
   <meta name="description" content="REGRESIVA es una banda peruana de rock de protesta formada en Lima, Perú. Sonido pesado, metal y crítica social. Escucha el álbum R.E.D.">
   <meta name="keywords" content="Regresiva, banda peruana, rock peruano, rock de protesta, metal peruano, banda de rock Lima, álbum RED Regresiva">
   <meta name="author" content="REGRESIVA">
 
+  <!-- Open Graph -->
   <meta property="og:title" content="REGRESIVA | Rock de protesta desde Perú">
   <meta property="og:description" content="Banda peruana de rock y metal de protesta. Escucha el álbum R.E.D. y conoce a REGRESIVA.">
   <meta property="og:image" content="img/regresiva-emblema.png">
@@ -23,55 +23,19 @@
     * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
-      font-family:'Oswald', Arial, sans-serif;
+      font-family: 'Oswald', Arial, sans-serif;
       background:#000;
       color:#e5e5e5;
       line-height:1.6;
     }
 
-    /* TEXTURA GLOBAL */
-    body::before {
-      content:"";
-      position:fixed;
-      inset:0;
-      background:url("img/noise.png");
-      opacity:.06;
-      pointer-events:none;
-      z-index:9999;
-    }
-
     a { color:#b30000; text-decoration:none; }
-
-    /* CONTENEDOR UNIFICADO */
-    .content {
-      max-width:1100px;
-      width:100%;
-      margin:auto;
-      padding:110px 20px;
-      border-left:3px solid #b30000;
-      padding-left:40px;
-    }
-
-    h2 {
-      font-size:2.2rem;
-      margin-bottom:25px;
-      text-transform:uppercase;
-      letter-spacing:2px;
-    }
-
-    p {
-      max-width:900px;
-      color:#ccc;
-      font-size:1.05rem;
-    }
-
-    .divider { height:1px; background:#1a1a1a; }
 
     /* HERO 1 */
     header {
       min-height:100vh;
       background:
-        linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.96)),
+        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
         url("img/regresiva-hero1.jpg") center/cover no-repeat;
       display:flex;
       align-items:center;
@@ -84,69 +48,89 @@
     header img.logo { max-width:360px; width:80%; margin-bottom:30px; }
 
     header h1 {
-      font-size:3rem;
-      letter-spacing:4px;
+      font-size:2.6rem;
+      letter-spacing:3px;
       margin-bottom:20px;
-      text-shadow:0 0 30px rgba(179,0,0,.35);
     }
 
     header p {
+      max-width:760px;
       margin:auto;
       font-size:1.1rem;
+      color:#ccc;
     }
 
-    /* HERO 2 */
+    section {
+      max-width:1100px;
+      margin:auto;
+      padding:100px 20px;
+    }
+
+    section h2 {
+      font-size:2.2rem;
+      margin-bottom:25px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+    }
+
+    section p {
+      max-width:900px;
+      color:#ccc;
+      font-size:1.05rem;
+    }
+
+    .divider { height:1px; background:#1a1a1a; }
+
+    /* HERO 2 SECTION */
     .hero-2 {
       min-height:100vh;
       background:
-        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
-        url("img/regresiva-hero2.jpg") center/cover no-repeat;
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("img/regresiva-hero2.jpg") center no-repeat;
+      background-size:cover;
       display:flex;
       align-items:center;
-      background-attachment:fixed;
     }
 
-    /* CONTACTO HERO */
+    /* CONTACTO HERO FINAL */
     #contacto {
       min-height:100vh;
       background:
-        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.95)),
-        url("img/regresiva-final.jpg") center/cover no-repeat;
+        linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+        url("img/regresiva-final.jpg") center no-repeat;
+      background-size:cover;
       display:flex;
       align-items:center;
-      background-attachment:fixed;
+      text-align:left;
+      padding:40px 20px;
     }
 
-    .album-btn {
+    /* BOTONES Y EMBED */
+    .album-btn, .contact-btn {
       display:inline-block;
       margin-top:30px;
-      padding:14px 40px;
-      border:2px solid #b30000;
-      color:#b30000;
-      font-weight:600;
-      letter-spacing:2px;
+      padding:14px 36px;
+      font-weight:700;
+      letter-spacing:1px;
       transition:.3s;
     }
 
-    .album-btn:hover {
-      background:#b30000;
+    .album-btn {
+      border:2px solid #b30000;
+      color:#b30000;
+    }
+
+    .album-btn:hover { background:#b30000; color:#000; }
+
+    .contact-btn {
+      background:#1ebc57;
       color:#000;
-      box-shadow:0 0 20px rgba(179,0,0,.5);
     }
 
     .embed { margin-top:40px; }
+    iframe { width:100%; max-width:900px; height:380px; border:none; }
 
-    iframe {
-      width:100%;
-      max-width:900px;
-      height:380px;
-      border:none;
-    }
-
-    .youtube-button {
-      margin:25px 0 35px;
-    }
-
+    .youtube-button { margin:25px 0 35px; }
     .youtube-button a {
       display:inline-block;
       padding:12px 22px;
@@ -157,22 +141,7 @@
       text-transform:uppercase;
       transition:.3s;
     }
-
-    .youtube-button a:hover {
-      background:#b30000;
-      color:#000;
-      box-shadow:0 0 20px rgba(179,0,0,.5);
-    }
-
-    .contact-btn {
-      display:inline-block;
-      margin-top:30px;
-      padding:14px 36px;
-      background:#1ebc57;
-      color:#000;
-      font-weight:700;
-      letter-spacing:1px;
-    }
+    .youtube-button a:hover { background:#b30000; color:#000; }
 
     footer {
       text-align:center;
@@ -183,32 +152,23 @@
     }
 
     .social { margin-top:25px; }
-
-    .social a {
-      margin:0 10px;
-      font-size:.85rem;
-      letter-spacing:1px;
-      color:#777;
-    }
-
+    .social a { margin:0 10px; font-size:.85rem; letter-spacing:1px; color:#777; }
     .social a:hover { color:#b30000; }
 
-    /* MOBILE */
+    /* ===== RESPONSIVE ===== */
     @media (max-width:768px) {
       header h1 { font-size:2rem; }
       iframe { height:280px; }
 
-      .content {
-        border-left:none;
-        padding-left:20px;
-      }
-
-      .hero-2,
-      #contacto {
-        background-attachment:scroll;
+      /* HERO 2 responsive para mostrar imagen completa */
+      .hero-2, #contacto {
         background-size:contain;
         background-position:center top;
+        min-height:70vh; /* ajusta si la imagen se ve cortada */
       }
+
+      /* Ajuste de padding para móviles */
+      #contacto { padding:20px; }
     }
   </style>
 </head>
@@ -219,7 +179,9 @@
   <div>
     <img src="img/regresiva-emblema.png" alt="Emblema Regresiva" class="emblema">
     <img src="img/regresiva-logo.png" alt="Regresiva banda peruana de rock" class="logo">
+
     <h1>ROCK DE PROTESTA DESDE PERÚ</h1>
+
     <p>
       REGRESIVA es una banda peruana de rock de protesta y resistencia cultural.
       Música como confrontación, identidad y fuerza sonora independiente.
@@ -229,7 +191,7 @@
 
 <div class="divider"></div>
 
-<section class="content" id="banda">
+<section id="banda">
   <h2>La Banda</h2>
   <p>
     REGRESIVA surge como una respuesta directa al conformismo y la repetición.
@@ -241,7 +203,7 @@
 <div class="divider"></div>
 
 <section class="hero-2">
-  <section class="content" id="musica">
+  <section id="musica">
     <h2>Música</h2>
     <p>
       El sonido de REGRESIVA se mueve entre el rock alternativo y el metal, con influencias
@@ -263,7 +225,7 @@
 
 <div class="divider"></div>
 
-<section class="content" id="apariciones">
+<section id="apariciones">
   <h2>Apariciones y Entrevistas</h2>
   <p>
     REGRESIVA ha participado en entrevistas y apariciones audiovisuales
@@ -286,7 +248,7 @@
 </section>
 
 <section id="contacto">
-  <section class="content">
+  <section>
     <h2>Contacto</h2>
     <p>Para prensa, contrataciones y comunicación directa con la banda.</p>
 
