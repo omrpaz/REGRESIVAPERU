@@ -7,9 +7,7 @@
   <title>REGRESIVA | Banda peruana de rock de protesta</title>
 
   <meta name="description" content="REGRESIVA es una banda peruana de rock de protesta formada en Lima, Perú. Sonido pesado, metal y crítica social. Escucha el álbum R.E.D.">
-
   <meta name="keywords" content="Regresiva, banda peruana, rock peruano, rock de protesta, metal peruano, banda de rock Lima, álbum RED Regresiva">
-
   <meta name="author" content="REGRESIVA">
 
   <!-- Open Graph -->
@@ -20,13 +18,14 @@
 
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Fuente -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
-      font-family: 'Oswald', Arial, sans-serif;
+      font-family:'Oswald', Arial, sans-serif;
       background:#000;
       color:#e5e5e5;
       line-height:1.6;
@@ -34,6 +33,7 @@
 
     a { color:#b30000; text-decoration:none; }
 
+    /* HERO PRINCIPAL */
     header {
       min-height:100vh;
       background:
@@ -46,24 +46,17 @@
       padding:40px 20px;
     }
 
-    .hero-content {
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-    }
-
     header img.emblema {
-      width:88px;
-      height:auto;
-      margin-bottom:22px;
       display:block;
+      width:90px;
+      margin:0 auto 20px;
     }
 
     header img.logo {
+      display:block;
       max-width:360px;
       width:80%;
-      margin-bottom:30px;
-      display:block;
+      margin:0 auto 30px;
     }
 
     header h1 {
@@ -79,6 +72,7 @@
       color:#ccc;
     }
 
+    /* SECCIONES */
     section {
       max-width:1100px;
       margin:auto;
@@ -100,6 +94,27 @@
 
     .divider { height:1px; background:#1a1a1a; }
 
+    /* SECCIONES VISUALES */
+    .section-image {
+      min-height:55vh;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:contain;
+    }
+
+    .hero-2 {
+      background-image:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
+        url("img/regresiva-hero2.jpg");
+    }
+
+    .hero-final {
+      background-image:
+        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
+        url("img/regresiva-final.jpg");
+    }
+
+    /* BOTONES */
     .album-btn {
       display:inline-block;
       margin-top:30px;
@@ -113,17 +128,8 @@
 
     .album-btn:hover { background:#b30000; color:#000; }
 
-    .embed { margin-top:40px; }
-
-    iframe {
-      width:100%;
-      max-width:900px;
-      height:380px;
-      border:none;
-    }
-
     .youtube-button {
-      margin: 25px 0 35px;
+      margin:25px 0 35px;
     }
 
     .youtube-button a {
@@ -142,6 +148,15 @@
       color:#000;
     }
 
+    .embed { margin-top:40px; }
+
+    iframe {
+      width:100%;
+      max-width:900px;
+      height:380px;
+      border:none;
+    }
+
     .contact-btn {
       display:inline-block;
       margin-top:30px;
@@ -150,13 +165,6 @@
       color:#000;
       font-weight:700;
       letter-spacing:1px;
-    }
-
-    .final-image {
-      min-height:70vh;
-      background:
-        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),
-        url("img/regresiva-final.jpg") center/cover no-repeat;
     }
 
     footer {
@@ -180,6 +188,7 @@
     @media (max-width:768px) {
       header h1 { font-size:2rem; }
       iframe { height:280px; }
+      .section-image { min-height:45vh; }
     }
   </style>
 </head>
@@ -187,16 +196,13 @@
 <body>
 
 <header>
-  <div class="hero-content">
+  <div>
     <img src="img/regresiva-emblema.png" alt="Emblema Regresiva" class="emblema">
     <img src="img/regresiva-logo.png" alt="Regresiva banda peruana de rock" class="logo">
-
     <h1>ROCK DE PROTESTA DESDE PERÚ</h1>
-
     <p>
       REGRESIVA es una banda peruana de rock de protesta formada en Lima, Perú.
-      Su propuesta combina rock y metal con un mensaje directo, crítico y sin concesiones,
-      construyendo una identidad sonora basada en la resistencia cultural y la autogestión.
+      Su propuesta combina rock y metal con un mensaje directo, crítico y sin concesiones.
     </p>
   </div>
 </header>
@@ -207,21 +213,18 @@
   <h2>La Banda</h2>
   <p>
     REGRESIVA nace en Lima como una respuesta al conformismo y a la pérdida de identidad
-    en la música contemporánea. La banda desarrolla un sonido sólido y agresivo donde
-    el rock y el metal se convierten en un vehículo de crítica social, postura ideológica
-    y expresión directa, manteniendo siempre una actitud independiente.
+    en la música contemporánea. Rock y metal como vehículo de crítica social
+    y resistencia cultural.
   </p>
 </section>
 
-<div class="divider"></div>
+<div class="section-image hero-2"></div>
 
 <section id="musica">
   <h2>Música</h2>
   <p>
-    El sonido de REGRESIVA se mueve entre el rock alternativo y el metal, con influencias
-    de la música de protesta y una lírica enfocada en la crítica social.
-    Su más reciente álbum, <strong>R.E.D.</strong>, representa una consolidación artística
-    y sonora dentro de su discografía.
+    El álbum <strong>R.E.D.</strong> consolida la identidad sonora de REGRESIVA:
+    guitarras pesadas, discurso frontal y actitud independiente.
   </p>
 
   <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank" class="album-btn">
@@ -239,13 +242,12 @@
 <section id="apariciones">
   <h2>Apariciones y Entrevistas</h2>
   <p>
-    REGRESIVA ha participado en entrevistas y apariciones audiovisuales
-    dentro de la escena independiente, abordando su propuesta musical,
-    postura crítica y proceso creativo.
+    REGRESIVA ha participado en entrevistas y apariciones audiovisuales dentro
+    de la escena independiente.
   </p>
 
   <div class="youtube-button">
-    <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" rel="noopener">
+    <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank">
       Ver canal oficial en YouTube Music
     </a>
   </div>
@@ -259,12 +261,11 @@
   </div>
 </section>
 
-<div class="final-image"></div>
+<div class="section-image hero-final"></div>
 
 <section id="contacto">
   <h2>Contacto</h2>
-  <p>Para prensa, contrataciones y comunicación directa con la banda.</p>
-
+  <p>Para prensa, contrataciones y comunicación directa.</p>
   <a href="https://wa.me/51906413899" target="_blank" class="contact-btn">
     WhatsApp +51 906 413 899
   </a>
