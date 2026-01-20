@@ -1,263 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regresiva | Banda peruana de rock de protesta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="description" content="Regresiva es una banda peruana de rock de protesta y resistencia cultural. Música pesada, mensaje directo y actitud independiente desde Lima, Perú.">
+  <title>REGRESIVA – Rock de protesta desde Perú</title>
 
-<meta property="og:title" content="Regresiva | Rock de protesta desde Perú">
-<meta property="og:description" content="Banda peruana de rock de protesta. Fuerza sonora, identidad y resistencia cultural.">
-<meta property="og:image" content="https://raw.githubusercontent.com/omrpaz/REGRESIVAPERU/main/img/regresiva-emblema.png">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="REGRESIVA es una banda peruana de rock de protesta. Sonido pesado, mensaje frontal y resistencia cultural desde Lima, Perú.">
 
-<link rel="icon" href="https://raw.githubusercontent.com/omrpaz/REGRESIVAPERU/main/img/regresiva-emblema.png">
+  <!-- Open Graph -->
+  <meta property="og:title" content="REGRESIVA – Rock de protesta desde Perú">
+  <meta property="og:description" content="Rock de protesta, identidad y resistencia cultural.">
+  <meta property="og:type" content="website">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#000;
-  color:#e5e5e5;
-  line-height:1.6
-}
-a{color:#b30000;text-decoration:none}
-a:hover{text-decoration:underline}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* NAV */
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(15,15,15,.9);
-  z-index:1000;
-  padding:8px 0;
-}
-.nav-links{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap
-}
-.nav-links a{
-  margin:4px 10px;
-  font-size:.8rem;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  color:#e5e5e5
-}
-.nav-links a:hover{color:#b30000}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #e6e6e6;
+      line-height: 1.6;
+    }
 
-/* HERO */
-header{
-  min-height:100vh;
-  background:
-  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
-  url("img/regresiva-hero.jpg") center/cover no-repeat;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:100px 20px 40px
-}
-.escudo{
-  width:120px;
-  margin-bottom:20px
-}
-.logo{
-  max-width:360px;
-  width:80%;
-  margin-bottom:25px
-}
-header h1{
-  font-size:2.2rem;
-  letter-spacing:2px;
-  margin-bottom:15px
-}
-header p{
-  max-width:700px;
-  margin:auto;
-  color:#ccc
-}
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:12px 32px;
-  border:2px solid #b30000;
-  color:#b30000;
-  font-weight:bold;
-  letter-spacing:1px;
-  transition:.3s
-}
-.btn:hover{
-  background:#b30000;
-  color:#000
-}
+    a {
+      color: #b30000;
+      text-decoration: none;
+    }
 
-/* SECCIONES */
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:90px 20px
-}
-section h2{
-  font-size:2rem;
-  margin-bottom:20px;
-  text-transform:uppercase
-}
-section p{
-  max-width:800px;
-  color:#ccc;
-  margin-bottom:25px
-}
-.divider{height:1px;background:#222}
+    /* =====================
+       HEADER / GESTO PRINCIPAL
+       ===================== */
 
-/* MUSICA */
-.musica-embed{text-align:center;margin-bottom:30px}
-.bandcamp-btn{
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 28px;
-  background:#b30000;
-  color:#fff;
-  font-weight:bold
-}
-iframe{width:100%;max-width:660px;border:none}
+    header {
+      min-height: 100vh;
+      padding: 80px 20px 40px;
+      display: flex;
+      align-items: flex-end;
+    }
 
-/* VIDEOS */
-.videos-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:20px
-}
-.video-item iframe{height:200px}
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-/* FOOTER TEXTO */
-footer{
-  text-align:center;
-  padding:40px 20px;
-  font-size:.75rem;
-  color:#777
-}
-.footer-links{
-  margin-bottom:10px
-}
-.footer-links a{
-  margin:0 8px;
-  color:#888;
-  letter-spacing:1px;
-  text-transform:uppercase
-}
-.footer-links a:hover{
-  color:#b30000
-}
+    .emblema {
+      width: 90px;
+      margin-bottom: 40px;
+    }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-  header h1{font-size:1.8rem}
-  section{padding:70px 20px}
-}
-</style>
+    h1 {
+      font-size: clamp(3rem, 7vw, 6rem);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      max-width: 520px;
+      font-size: 1.05rem;
+      color: #bbb;
+    }
+
+    /* =====================
+       SECCIONES
+       ===================== */
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 20px;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    section p {
+      max-width: 640px;
+      color: #bfbfbf;
+    }
+
+    /* Ritmo roto */
+    .offset {
+      margin-left: auto;
+      max-width: 800px;
+    }
+
+    .divider {
+      height: 1px;
+      background: #1a1a1a;
+    }
+
+    /* =====================
+       MÚSICA
+       ===================== */
+
+    .music-links {
+      margin-top: 30px;
+    }
+
+    .album-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 34px;
+      border: 2px solid #b30000;
+      color: #b30000;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: .3s;
+    }
+
+    .album-btn:hover {
+      background: #b30000;
+      color: #000;
+    }
+
+    /* =====================
+       CONTACTO
+       ===================== */
+
+    .contacto {
+      font-size: 1.1rem;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      background: #1ebc57;
+      color: #000;
+      font-weight: bold;
+    }
+
+    /* =====================
+       FOOTER
+       ===================== */
+
+    footer {
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .social {
+      margin-top: 25px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      color: #777;
+    }
+
+    .social a:hover {
+      color: #b30000;
+    }
+
+    /* =====================
+       RESPONSIVE
+       ===================== */
+
+    @media (max-width: 768px) {
+      header {
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .offset {
+        margin-left: 0;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <div class="nav-links">
-    <a href="#banda">Banda</a>
-    <a href="#musica">Música</a>
-    <a href="#videos">Videos</a>
-    <a href="#tienda">Tienda</a>
-    <a href="#contacto">Contacto</a>
-  </div>
-</nav>
-
 <header>
-  <div>
-    <img src="https://raw.githubusercontent.com/omrpaz/REGRESIVAPERU/main/img/regresiva-emblema.png" class="escudo" alt="Regresiva">
-    <img src="https://raw.githubusercontent.com/omrpaz/REGRESIVAPERU/main/img/regresiva-logo.png" class="logo" alt="Regresiva logo">
-    <h1>ROCK DE PROTESTA DESDE PERÚ</h1>
+  <div class="hero">
+    <img src="img/regresiva-emblema.png" alt="Regresiva emblema" class="emblema">
+
+    <h1>
+      ROCK<br>
+      DE<br>
+      PROTESTA
+    </h1>
+
     <p>
       REGRESIVA es una banda peruana de rock de protesta y resistencia cultural.
-      Música como confrontación, identidad y fuerza sonora independiente.
+      Música como confrontación. Identidad sin concesiones.
     </p>
-    <a href="#banda" class="btn">Conocer la banda</a>
   </div>
 </header>
 
 <div class="divider"></div>
 
-<section id="banda">
-<h2>La Banda</h2>
-<p>
-Regresiva surge como una respuesta directa al conformismo y la repetición.
-Propuesta sonora pesada, mensaje frontal y convicción artística.
-</p>
+<section>
+  <h2>La Banda</h2>
+  <p>
+    REGRESIVA surge como respuesta directa al conformismo y la repetición.
+    Sonido pesado, mensaje frontal y autogestión como postura artística.
+  </p>
 </section>
 
 <div class="divider"></div>
 
-<section id="musica">
-<h2>Música</h2>
+<section class="offset">
+  <h2>Música</h2>
+  <p>
+    Rock alternativo, metal y protesta confluyen en un lenguaje crudo y directo.
+    Escucha nuestro álbum más reciente:
+  </p>
 
-<div class="musica-embed">
-  <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank">
-    <img src="https://f4.bcbits.com/img/a2870835096_10.jpg" style="width:280px;border-radius:8px">
-  </a><br>
-  <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank" class="bandcamp-btn">
-    Escuchar R.E.D en Bandcamp
+  <div class="music-links">
+    <a class="album-btn" href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank">
+      ÁLBUM R.E.D
+    </a>
+  </div>
+
+  <div style="margin-top:40px">
+    <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank">
+      Ver canal en YouTube Music
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <h2>Contacto</h2>
+  <p class="contacto">
+    Shows, prensa y comunicación directa.
+  </p>
+
+  <a class="whatsapp" href="https://wa.me/51906413899" target="_blank">
+    WhatsApp +51 906 413 899
   </a>
-</div>
-
-<div class="musica-embed">
-  <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt"></iframe>
-</div>
-
-<a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" class="btn">
-  YouTube Music
-</a>
-</section>
-
-<div class="divider"></div>
-
-<section id="videos">
-<h2>Videos</h2>
-<div class="videos-grid">
-  <div class="video-item">
-    <iframe src="https://www.youtube.com/embed/MsXHvm-iM1c" allowfullscreen></iframe>
-  </div>
-  <div class="video-item">
-    <iframe src="https://www.youtube.com/embed/J2Lsm-c2ITA" allowfullscreen></iframe>
-  </div>
-</div>
-</section>
-
-<div class="divider"></div>
-
-<section id="tienda">
-<h2>Tienda</h2>
-<a href="https://regresiva.mozello.shop/tienda/" class="btn" target="_blank">
-  Ir a la tienda oficial
-</a>
-</section>
-
-<div class="divider"></div>
-
-<section id="contacto">
-<h2>Contacto</h2>
-<p>contacto@regresivaperu.com</p>
 </section>
 
 <footer>
-  <div class="footer-links">
-    <a href="https://www.facebook.com/regresiva.banda" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/regresivaband" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@regresivaband" target="_blank">TikTok</a>
-    <a href="https://wa.me/51906413899" target="_blank">WhatsApp</a>
+  © REGRESIVA – Lima, Perú
+
+  <div class="social">
+    <a href="https://www.facebook.com/regresiva.banda" target="_blank">FACEBOOK</a>
+    <a href="https://www.instagram.com/regresivaband" target="_blank">INSTAGRAM</a>
+    <a href="https://www.tiktok.com/@regresivaband" target="_blank">TIKTOK</a>
+    <a href="https://open.spotify.com/artist/17qr9zMkyoXnJ9CqcVoPLt" target="_blank">SPOTIFY</a>
   </div>
-  © Regresiva – Lima, Perú
 </footer>
 
 </body>
