@@ -9,13 +9,6 @@
 <meta name="keywords" content="Regresiva, banda peruana, rock de protesta, metal peruano, música independiente, álbum R.E.D., rock Lima, música de protesta, merch, tienda de banda">
 <meta name="author" content="REGRESIVA">
 
-<!-- Open Graph -->
-<meta property="og:title" content="REGRESIVA | Rock de protesta desde Perú">
-<meta property="og:description" content="Banda peruana de rock y metal de protesta. Escucha el álbum R.E.D. y conoce a REGRESIVA.">
-<meta property="og:image" content="img/regresiva-emblema.png">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -24,7 +17,7 @@
 body { font-family:'Oswald', Arial, sans-serif; background:#000; color:#e5e5e5; line-height:1.6; }
 a { color:#b30000; text-decoration:none; }
 
-/* CONTENEDOR PRINCIPAL PARA MÁRGENES UNIFORMES */
+/* CONTENEDORES PARA MÁRGENES UNIFORMES */
 section > div, header > div { max-width:1100px; margin:0 auto; padding:0 20px; }
 
 /* BOTONES DE SCROLL */
@@ -40,8 +33,8 @@ section > div, header > div { max-width:1100px; margin:0 auto; padding:0 20px; }
 }
 .scroll-btns a {
   display:inline-block;
-  width:25px;
-  height:25px;
+  width:30px;
+  height:30px;
   border-radius:50%;
   background:#b30000;
   border:2px solid #fff;
@@ -49,51 +42,71 @@ section > div, header > div { max-width:1100px; margin:0 auto; padding:0 20px; }
 }
 .scroll-btns a:hover { background:#fff; border-color:#b30000; }
 
-/* HERO SECTIONS */
-header, .hero-2, #contacto {
+/* HERO PRINCIPAL */
+header {
   min-height:100vh;
   display:flex;
   align-items:center;
-  justify-content:flex-start;
-  text-align:left;
-  background-repeat:no-repeat;
+  justify-content:center;
+  text-align:center;
+  background-image:url("img/regresiva-hero1.jpg");
   background-size:cover;
   background-position:center center;
-  background-attachment:fixed;
   position:relative;
-  padding:40px 20px;
 }
-header { background-image:url("img/regresiva-hero1.jpg"); }
-.hero-2 { background-image:url("img/regresiva-hero2.jpg"); }
-#contacto { background-image:url("img/regresiva-final.jpg"); }
-
-header::before, .hero-2::before, #contacto::before {
+header::before {
   content:"";
   position:absolute;
   top:0; left:0; right:0; bottom:0;
   background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85));
   z-index:0;
 }
-header > div, .hero-2 > section > div, #contacto > section > div { position:relative; z-index:1; }
-
-/* LOGO */
+header > div { position:relative; z-index:1; }
 header img.emblema { width:90px; display:block; margin:0 auto 25px; border-radius:50%; }
 header img.logo { max-width:360px; width:80%; display:block; margin:0 auto 30px; }
 
+/* HERO SECCIONES DINÁMICAS (PARALLAX) */
+.hero-2, #contacto {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  text-align:left;
+  position:relative;
+  padding:40px 20px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  will-change: transform;
+}
+.hero-2::before, #contacto::before {
+  content:"";
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85));
+  z-index:0;
+}
+.hero-2 > section > div, #contacto > section > div { position:relative; z-index:1; }
+
 /* TEXTOS HERO */
-header h1, .hero-2 h2, #contacto h2 { font-size:2.6rem; letter-spacing:3px; margin-bottom:20px; color:#fff; }
-header p, .hero-2 p, #contacto p { font-size:1.1rem; color:#ccc; margin-bottom:25px; }
+header h1 { font-size:2.8rem; letter-spacing:3px; margin-bottom:20px; color:#fff; }
+header p { font-size:1.1rem; color:#ccc; margin-bottom:25px; }
+
+.hero-2 h2, #contacto h2 { font-size:2.4rem; letter-spacing:2px; margin-bottom:20px; color:#fff; }
+.hero-2 p, #contacto p { font-size:1.05rem; color:#ccc; margin-bottom:25px; }
 
 /* SECCIONES NORMALES */
 section h2 { font-size:2.2rem; margin-bottom:25px; text-transform:uppercase; letter-spacing:2px; }
 section p { font-size:1.05rem; color:#ccc; margin-bottom:25px; }
+
+/* DIVIDER */
 .divider { height:1px; background:#1a1a1a; }
 
 /* BOTONES */
 .album-btn, .contact-btn {
   display:inline-block;
   margin-top:30px;
-  padding:14px 36px;
+  padding:16px 40px;
   font-weight:700;
   letter-spacing:1px;
   transition:.3s;
@@ -106,10 +119,11 @@ section p { font-size:1.05rem; color:#ccc; margin-bottom:25px; }
 .embed { margin-top:40px; }
 iframe { width:100%; max-width:900px; height:380px; border:none; }
 
+/* BOTÓN YOUTUBE */
 .youtube-button { margin:25px 0 35px; }
 .youtube-button a {
   display:inline-block;
-  padding:12px 22px;
+  padding:14px 24px;
   border:1px solid #b30000;
   color:#b30000;
   font-size:14px;
@@ -127,17 +141,17 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
 
 /* RESPONSIVE */
 @media (max-width:1024px) {
-  header h1, .hero-2 h2, #contacto h2 { font-size:2.4rem; }
+  header h1 { font-size:2.4rem; }
+  .hero-2 h2, #contacto h2 { font-size:2.2rem; }
   section h2 { font-size:2rem; }
   section p, .hero-2 p, #contacto p { font-size:1rem; }
   iframe { height:300px; }
 }
 @media (max-width:768px) {
-  header, .hero-2, #contacto { background-attachment:scroll; background-position:center top; min-height:80vh; }
-  header h1, .hero-2 h2, #contacto h2 { font-size:2rem; }
+  header h1 { font-size:2rem; }
+  .hero-2, #contacto { background-attachment:scroll; background-position:center top; min-height:80vh; }
   section h2 { font-size:1.8rem; }
   section p, .hero-2 p, #contacto p { font-size:0.95rem; }
-  .scroll-btns a { width:25px; height:25px; }
 }
 </style>
 </head>
@@ -176,7 +190,7 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
 <div class="divider"></div>
 
 <!-- MÚSICA -->
-<section class="hero-2">
+<section class="hero-2" style="background-image:url('img/regresiva-hero2.jpg');">
   <section id="musica">
     <div>
       <h2>Música</h2>
@@ -211,7 +225,7 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto">
+<section id="contacto" style="background-image:url('img/regresiva-final.jpg');">
   <section>
     <div>
       <h2>Contacto</h2>
@@ -232,6 +246,17 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
     </div>
   </div>
 </footer>
+
+<!-- PARALLAX DINÁMICO -->
+<script>
+const parallaxSections = document.querySelectorAll('.hero-2, #contacto');
+window.addEventListener('scroll', () => {
+  parallaxSections.forEach(sec => {
+    let offset = window.pageYOffset;
+    sec.style.backgroundPositionY = `${offset * 0.5}px`; // movimiento parallax dinámico
+  });
+});
+</script>
 
 </body>
 </html>
