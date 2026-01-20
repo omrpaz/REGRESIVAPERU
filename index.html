@@ -7,9 +7,7 @@
   <title>REGRESIVA | Banda peruana de rock de protesta</title>
 
   <meta name="description" content="REGRESIVA es una banda peruana de rock de protesta formada en Lima, Perú. Sonido pesado, metal y crítica social. Escucha el álbum R.E.D.">
-
   <meta name="keywords" content="Regresiva, banda peruana, rock peruano, rock de protesta, metal peruano, banda de rock Lima, álbum RED Regresiva">
-
   <meta name="author" content="REGRESIVA">
 
   <!-- Open Graph -->
@@ -34,6 +32,7 @@
 
     a { color:#b30000; text-decoration:none; }
 
+    /* HERO 1 */
     header {
       min-height:100vh;
       background:
@@ -46,25 +45,8 @@
       padding:40px 20px;
     }
 
-    .hero-content {
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-    }
-
-    header img.emblema {
-      width:88px;
-      height:auto;
-      margin-bottom:22px;
-      display:block;
-    }
-
-    header img.logo {
-      max-width:360px;
-      width:80%;
-      margin-bottom:30px;
-      display:block;
-    }
+    header img.emblema { width:90px; margin-bottom:25px; }
+    header img.logo { max-width:360px; width:80%; margin-bottom:30px; }
 
     header h1 {
       font-size:2.6rem;
@@ -99,6 +81,24 @@
     }
 
     .divider { height:1px; background:#1a1a1a; }
+
+    /* HERO 2 SECTION */
+    .hero-2 {
+      min-height:100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+        url("img/regresiva-hero2.jpg") center no-repeat;
+      background-size:cover;
+      display:flex;
+      align-items:center;
+    }
+
+    @media (max-width:768px) {
+      .hero-2 {
+        background-size:contain;
+        background-position:center top;
+      }
+    }
 
     .album-btn {
       display:inline-block;
@@ -142,6 +142,25 @@
       color:#000;
     }
 
+    /* CONTACTO HERO FINAL */
+    #contacto {
+      min-height:100vh;
+      background:
+        linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+        url("img/regresiva-final.jpg") left center no-repeat;
+      background-size:cover;
+      display:flex;
+      align-items:center;
+      text-align:left;
+    }
+
+    @media (max-width:768px) {
+      #contacto {
+        background-size:contain;
+        background-position:center top;
+      }
+    }
+
     .contact-btn {
       display:inline-block;
       margin-top:30px;
@@ -150,13 +169,6 @@
       color:#000;
       font-weight:700;
       letter-spacing:1px;
-    }
-
-    .final-image {
-      min-height:70vh;
-      background:
-        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),
-        url("img/regresiva-final.jpg") center/cover no-repeat;
     }
 
     footer {
@@ -187,7 +199,7 @@
 <body>
 
 <header>
-  <div class="hero-content">
+  <div>
     <img src="img/regresiva-emblema.png" alt="Emblema Regresiva" class="emblema">
     <img src="img/regresiva-logo.png" alt="Regresiva banda peruana de rock" class="logo">
 
@@ -215,23 +227,25 @@
 
 <div class="divider"></div>
 
-<section id="musica">
-  <h2>Música</h2>
-  <p>
-    El sonido de REGRESIVA se mueve entre el rock alternativo y el metal, con influencias
-    de la música de protesta y una lírica enfocada en la crítica social.
-    Su más reciente álbum, <strong>R.E.D.</strong>, representa una consolidación artística
-    y sonora dentro de su discografía.
-  </p>
+<section class="hero-2">
+  <section id="musica">
+    <h2>Música</h2>
+    <p>
+      El sonido de REGRESIVA se mueve entre el rock alternativo y el metal, con influencias
+      de la música de protesta y una lírica enfocada en la crítica social.
+      Su más reciente álbum, <strong>R.E.D.</strong>, representa una consolidación artística
+      y sonora dentro de su discografía.
+    </p>
 
-  <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank" class="album-btn">
-    ESCUCHAR ÁLBUM R.E.D
-  </a>
+    <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank" class="album-btn">
+      ESCUCHAR ÁLBUM R.E.D
+    </a>
 
-  <div class="embed">
-    <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-  </div>
+    <div class="embed">
+      <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+  </section>
 </section>
 
 <div class="divider"></div>
@@ -259,15 +273,15 @@
   </div>
 </section>
 
-<div class="final-image"></div>
-
 <section id="contacto">
-  <h2>Contacto</h2>
-  <p>Para prensa, contrataciones y comunicación directa con la banda.</p>
+  <section>
+    <h2>Contacto</h2>
+    <p>Para prensa, contrataciones y comunicación directa con la banda.</p>
 
-  <a href="https://wa.me/51906413899" target="_blank" class="contact-btn">
-    WhatsApp +51 906 413 899
-  </a>
+    <a href="https://wa.me/51906413899" target="_blank" class="contact-btn">
+      WhatsApp +51 906 413 899
+    </a>
+  </section>
 </section>
 
 <footer>
