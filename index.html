@@ -29,7 +29,7 @@
     }
     a { color:#b30000; text-decoration:none; }
     header, section { position:relative; }
-    
+
     /* BOTONES DE SCROLL */
     .scroll-btns {
       position:fixed;
@@ -83,28 +83,29 @@
     section p { max-width:900px; color:#ccc; font-size:1.05rem; }
     .divider { height:1px; background:#1a1a1a; }
 
-    /* HERO 2 SECTION */
-    .hero-2 {
+    /* HERO 2 y CONTACTO: imagen tipo portada, pantalla completa */
+    .hero-2, #contacto {
       min-height:100vh;
-      background:
-        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
-        url("img/regresiva-hero2.jpg") center/cover no-repeat;
       display:flex;
       align-items:center;
       justify-content:center;
-    }
-
-    /* CONTACTO HERO FINAL */
-    #contacto {
-      min-height:100vh;
-      background:
-        linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
-        url("img/regresiva-final.jpg") center/cover no-repeat;
-      display:flex;
-      align-items:center;
-      text-align:left;
+      text-align:center;
+      background-repeat:no-repeat;
+      background-size:cover; /* ocupa toda la pantalla */
+      background-position:center center; /* mantiene el centro visible */
+      position:relative;
       padding:40px 20px;
     }
+
+    /* Gradiente superpuesto para legibilidad */
+    .hero-2::before, #contacto::before {
+      content:"";
+      position:absolute;
+      top:0; left:0; right:0; bottom:0;
+      background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85));
+      z-index:0;
+    }
+    .hero-2 > section, #contacto > section { position:relative; z-index:1; }
 
     /* BOTONES Y EMBED */
     .album-btn, .contact-btn {
@@ -149,13 +150,13 @@
       header h1 { font-size:2rem; }
       iframe { height:280px; }
 
-      /* HERO 2 responsive para mostrar imagen completa */
+      /* Ajuste de héroes para móvil */
       .hero-2, #contacto {
-        background-size:contain;
         background-position:center top;
-        min-height:70vh;
+        min-height:80vh;
       }
-      #contacto { padding:20px; }
+      .hero-2 h2, #contacto h2 { font-size:2rem; }
+      .hero-2 p, #contacto p { font-size:1rem; }
     }
   </style>
 </head>
@@ -197,7 +198,7 @@
 
 <div class="divider"></div>
 
-<section class="hero-2">
+<section class="hero-2" style="background-image:url('img/regresiva-hero2.jpg');">
   <section id="musica">
     <h2>Música</h2>
     <p>
@@ -242,7 +243,7 @@
   </div>
 </section>
 
-<section id="contacto">
+<section id="contacto" style="background-image:url('img/regresiva-final.jpg');">
   <section>
     <h2>Contacto</h2>
     <p>Para prensa, contrataciones y comunicación directa con la banda.</p>
@@ -265,4 +266,3 @@
 
 </body>
 </html>
-
