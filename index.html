@@ -20,7 +20,6 @@
 
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Fuente -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -37,8 +36,9 @@
 
     header {
       min-height:100vh;
-      background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
-      url("img/regresiva-hero.jpg") center/cover no-repeat;
+      background:
+        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
+        url("img/regresiva-hero1.jpg") center/cover no-repeat;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -46,8 +46,25 @@
       padding:40px 20px;
     }
 
-    header img.emblema { width:90px; margin-bottom:25px; }
-    header img.logo { max-width:360px; width:80%; margin-bottom:30px; }
+    .hero-content {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    header img.emblema {
+      width:88px;
+      height:auto;
+      margin-bottom:22px;
+      display:block;
+    }
+
+    header img.logo {
+      max-width:360px;
+      width:80%;
+      margin-bottom:30px;
+      display:block;
+    }
 
     header h1 {
       font-size:2.6rem;
@@ -105,6 +122,26 @@
       border:none;
     }
 
+    .youtube-button {
+      margin: 25px 0 35px;
+    }
+
+    .youtube-button a {
+      display:inline-block;
+      padding:12px 22px;
+      border:1px solid #b30000;
+      color:#b30000;
+      font-size:14px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      transition:.3s;
+    }
+
+    .youtube-button a:hover {
+      background:#b30000;
+      color:#000;
+    }
+
     .contact-btn {
       display:inline-block;
       margin-top:30px;
@@ -113,6 +150,13 @@
       color:#000;
       font-weight:700;
       letter-spacing:1px;
+    }
+
+    .final-image {
+      min-height:70vh;
+      background:
+        linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),
+        url("img/regresiva-final.jpg") center/cover no-repeat;
     }
 
     footer {
@@ -137,34 +181,13 @@
       header h1 { font-size:2rem; }
       iframe { height:280px; }
     }
-    .youtube-button {
-  margin: 25px 0 35px;
-}
-
-.youtube-button a {
-  display: inline-block;
-  padding: 12px 22px;
-  border: 1px solid #b30000;
-  color: #b30000;
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.youtube-button a:hover {
-  background: #b30000;
-  color: #000;
-}
-
   </style>
 </head>
 
 <body>
 
 <header>
-  <div>
+  <div class="hero-content">
     <img src="img/regresiva-emblema.png" alt="Emblema Regresiva" class="emblema">
     <img src="img/regresiva-logo.png" alt="Regresiva banda peruana de rock" class="logo">
 
@@ -209,12 +232,9 @@
     <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
   </div>
-
 </section>
 
 <div class="divider"></div>
-
-  <div class="divider"></div>
 
 <section id="apariciones">
   <h2>Apariciones y Entrevistas</h2>
@@ -223,32 +243,23 @@
     dentro de la escena independiente, abordando su propuesta musical,
     postura crítica y proceso creativo.
   </p>
-  <div class="youtube-button">
-  <a 
-    href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw"
-    target="_blank"
-    rel="noopener"
-  >
-    Ver canal oficial en YouTube Music
-  </a>
-</div>
 
-  <div class="embed">
-    <iframe 
-      src="https://www.youtube.com/embed/MsXHvm-iM1c"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+  <div class="youtube-button">
+    <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" rel="noopener">
+      Ver canal oficial en YouTube Music
+    </a>
   </div>
 
   <div class="embed">
-    <iframe 
-      src="https://www.youtube.com/embed/J2Lsm-c2ITA"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <iframe src="https://www.youtube.com/embed/MsXHvm-iM1c" allowfullscreen></iframe>
+  </div>
+
+  <div class="embed">
+    <iframe src="https://www.youtube.com/embed/J2Lsm-c2ITA" allowfullscreen></iframe>
   </div>
 </section>
+
+<div class="final-image"></div>
 
 <section id="contacto">
   <h2>Contacto</h2>
