@@ -182,20 +182,21 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
   section p, .hero-2 p, #contacto p { font-size:0.95rem; }
 }
 
-/* COMUNIDAD (SIN CAMBIOS DE CONTENIDO) */
+/* COMUNIDAD REVISADA */
 #comunidad {
   position: relative;
+  min-height: 100vh; /* ocupa toda la pantalla */
   background: url("img/goldensouls.jpg") center center/cover no-repeat;
   color: #ffffff;
 }
+
 #comunidad .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(0,0,0,0.85),
-    rgba(0,0,0,0.75)
-  );
+  /* overlay más ligero para que se vea la foto completa */
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3));
 }
+
 #comunidad .contenido {
   position: relative;
   max-width: 1100px;
@@ -203,11 +204,13 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
   padding: 90px 20px;
   text-align: center;
 }
+
 #comunidad h2 {
   font-size: 32px;
   letter-spacing: 4px;
   margin-bottom: 25px;
 }
+
 #comunidad .descripcion {
   max-width: 720px;
   margin: 0 auto 40px;
@@ -215,39 +218,46 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
   line-height: 1.7;
   color: #e5e5e5;
 }
+
 #comunidad .social-links {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 25px;
 }
+
 #comunidad .social-links a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px; /* letras más grandes */
   letter-spacing: 2px;
   border-bottom: 1px solid transparent;
 }
+
 #comunidad .social-links a:hover {
   border-bottom: 1px solid #ffffff;
 }
+
 #comunidad .hashtag {
-  font-size: 28px;
-  letter-spacing: 6px;
-  opacity: 0.85;
-  margin-bottom: 100px;
+  font-size: 18px; /* más llamativo */
+  letter-spacing: 3px;
+  opacity: 0.95;
+  margin-bottom: 50px;
 }
+
 #comunidad .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
+
 #comunidad .galeria img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   filter: grayscale(20%);
 }
+
 #comunidad .scroll-down {
   position: absolute;
   bottom: 30px;
@@ -258,7 +268,9 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
   text-decoration: none;
   opacity: 0.6;
 }
+
 #comunidad .scroll-down:hover { opacity: 1; }
+
 
 /* AJUSTE TÉCNICO DE SCROLL (SIN DISEÑO) */
 #banda,
@@ -338,30 +350,25 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
   <div class="contenido">
     <h2>COMUNIDAD</h2>
     <p class="descripcion">
-      La fuerza de REGRESIVA está en su gente. 
-      Fotos, videos y momentos compartidos por nuestros fans 
-      que hacen de cada concierto una experiencia única.
-      TODOS JUNTOS SOMOS UN SOLO PUÑO QUE GOLPEA HACIA LA COHERENCIA Y VERDAD
-
-
-      
+      La fuerza de REGRESIVA está en su gente.<br>
+      Fotos, videos y momentos compartidos por nuestros fans hacen de cada concierto una experiencia única.
     </p>
+
     <div class="social-links">
       <a href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram</a>
       <a href="https://tiktok.com/@TU_USUARIO" target="_blank" rel="noopener">TikTok</a>
       <a href="https://facebook.com/TU_PAGINA" target="_blank" rel="noopener">Facebook</a>
     </div>
+
     <div class="hashtag">
-      <a href="https://www.instagram.com/explore/tags/regresivaenvivo/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">#RegresivaEnVivo</a>
+      <a href="https://www.instagram.com/explore/tags/regresivaenvivo/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">
+        #RegresivaEnVivo
+      </a>
     </div>
-
-
-
-
-
-    
   </div>
+  <a href="#contacto" class="scroll-down">↓</a>
 </section>
+
 
 
 <!-- CONTACTO -->
