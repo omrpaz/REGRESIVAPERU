@@ -270,6 +270,43 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
 }
 
 #comunidad .scroll-down:hover { opacity: 1; }
+  #banda {
+  position: relative;
+  background: url("img/regresiva-hero3.jpg") center center/cover no-repeat;
+  color: #ffffff;
+}
+
+#banda .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+  );
+}
+
+#banda .wrapper {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+#banda h2 {
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+#banda p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #e5e5e5;
+}
+
 
 
 /* AJUSTE TÉCNICO DE SCROLL (SIN DISEÑO) */
@@ -304,15 +341,14 @@ footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; bord
 
 <div class="divider"></div>
 
-<!-- BANDA -->
-<section class="hero-2" style="background-image:url('img/regresiva-hero3.jpg');">
-  <div class="wrapper" id="banda">
+<section id="banda" class="hero-2" style="background-image:url('img/regresiva-hero3.jpg');">
+  <div class="overlay"></div>
+  <div class="wrapper">
     <h2>LA BANDA</h2>
     <p>REGRESIVA surge como una respuesta directa al conformismo y la repetición. Con un sonido fuerte y un mensaje frontal, la banda construye música desde la autogestión, la crítica y la convicción.</p>
   </div>
 </section>
 
-<div class="divider"></div>
 
 <!-- MÚSICA -->
 <section class="hero-2" style="background-image:url('img/mandilblanco.jpg');">
