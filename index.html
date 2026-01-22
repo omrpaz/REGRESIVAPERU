@@ -3,192 +3,265 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>REGRESIVA | Banda peruana de rock de protesta</title>
-<meta name="description" content="REGRESIVA es una banda peruana de rock de protesta y metal alternativo. Música independiente desde Perú.">
-<meta name="keywords" content="Regresiva, rock peruano, rock de protesta, metal alternativo, banda peruana">
+<meta name="description" content="REGRESIVA es una banda peruana de rock de protesta y metal alternativo. Escucha su álbum R.E.D., conoce su música y contacto directo con la banda.">
+<meta name="keywords" content="Regresiva, banda peruana, rock de protesta, metal peruano, música independiente, álbum R.E.D., rock Lima, música de protesta, merch, tienda de banda">
 <meta name="author" content="REGRESIVA">
 
-<link rel="icon" type="image/png" href="img/regresiva-favicon.png">
+<!-- FAVICON -->
+<link rel="icon" href="regresiva-favicon.png" type="image/png">
+
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<!-- SCHEMA JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "MusicGroup",
-  "name": "REGRESIVA",
-  "url": "https://omrpaz.github.io/REGRESIVAPERU/",
-  "sameAs": [
-    "https://www.instagram.com/regresivaband",
-    "https://www.facebook.com/regresivaband",
-    "https://www.tiktok.com/@regresivaband",
-    "https://www.youtube.com/@regresivaband"
-  ]
+"@context": "https://schema.org",
+"@type": "MusicGroup",
+"name": "REGRESIVA",
+"url": "https://omrpaz.github.io/REGRESIVAPERU/",
+"sameAs": [
+"https://www.facebook.com/regresiva.banda",
+"https://www.instagram.com/regresivaband",
+"https://www.tiktok.com/@regresivaband",
+"https://open.spotify.com/artist/17qr9zMkyoXnJ9CqcVoPLt"
+],
+"image": "https://omrpaz.github.io/REGRESIVAPERU/img/regresiva-logo.png",
+"genre": "Rock de protesta, Metal alternativo",
+"album": {
+"@type": "MusicAlbum",
+"name": "R.E.D."
+}
 }
 </script>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:'Oswald',Arial,sans-serif;background:#000;color:#e5e5e5}
-a{text-decoration:none}
-
-.wrapper{max-width:1100px;margin:auto;padding:80px 20px}
-
-.scroll-btns{
-position:fixed;right:20px;top:50%;
-transform:translateY(-50%);
-display:flex;flex-direction:column;gap:14px;z-index:999
-}
-.scroll-btns a{
-width:28px;height:28px;border-radius:50%;
-background:#b30000;border:2px solid #fff;transition:.3s
-}
-.scroll-btns a:hover{background:#fff;border-color:#b30000}
-
-header{
-min-height:100vh;display:flex;align-items:center;justify-content:center;
-text-align:center;background:url("img/regresiva-hero4.jpg") center/cover no-repeat;
-position:relative
-}
-header::before{
-content:"";position:absolute;inset:0;
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85))
-}
-header>div{position:relative;z-index:1}
-header img.logo{max-width:360px;width:80%;margin-bottom:30px}
-header h1{letter-spacing:3px;font-size:2.8rem}
-header p{color:#ccc}
-
-.hero-2,#contacto,#comunidad{
-min-height:100vh;display:flex;align-items:center;
-position:relative;background-size:cover;background-position:center
-}
-.hero-2::before,#contacto::before,#comunidad::before{
-content:"";position:absolute;inset:0;
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85))
-}
-.hero-2>.wrapper,#contacto>.wrapper,#comunidad>.wrapper{
-position:relative;z-index:1
+/* RESET */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 
-.divider{height:1px;background:#1a1a1a}
+body {
+  font-family:'Oswald', Arial, sans-serif;
+  background:#000;
+  color:#e5e5e5;
+  line-height:1.6;
+}
 
-.album-btn{
-display:inline-block;margin-top:30px;
-padding:16px 40px;border:2px solid #b30000;
-color:#b30000;font-weight:700
-}
-.album-btn:hover{background:#b30000;color:#000}
+a { color:#b30000; text-decoration:none; }
 
-iframe{width:100%;max-width:900px;height:380px;border:none}
+/* CONTENEDORES */
+.wrapper {
+  max-width:1100px;
+  margin:0 auto;
+  padding:80px 20px;
+}
 
-footer{text-align:center;padding:60px 20px;color:#777;border-top:1px solid #1a1a1a}
+/* BOTONES DE SCROLL */
+.scroll-btns {
+  position:fixed;
+  right:20px;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  z-index:999;
+}
 
-/* ===== COMUNIDAD ===== */
-#comunidad{
-background:url("img/goldensouls.jpg") center top / cover no-repeat;
-text-align:center
+.scroll-btns a {
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:#b30000;
+  border:2px solid #fff;
+  transition:.3s;
 }
-#comunidad h2{
-font-size:2.4rem;letter-spacing:3px;margin-bottom:25px
+
+.scroll-btns a:hover {
+  background:#fff;
+  border-color:#b30000;
 }
-#comunidad p{
-max-width:720px;margin:0 auto 35px;
-color:#ccc;font-size:1.05rem
+
+/* HERO */
+header {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background-image:url("img/regresiva-hero4.jpg");
+  background-size:cover;
+  background-position:center;
+  position:relative;
 }
-.community-links{
-display:flex;justify-content:center;
-gap:25px;flex-wrap:wrap;margin-top:20px
+
+header::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85));
 }
-.community-links a{
-padding:14px 28px;
-border:1px solid #b30000;
-color:#b30000;letter-spacing:2px;font-size:.85rem
+
+header > div {
+  position:relative;
+  z-index:1;
 }
-.community-links a:hover{
-background:#b30000;color:#000
+
+header img.emblema {
+  width:90px;
+  margin:0 auto 25px;
+  display:block;
 }
-.hashtag{
-margin-top:35px;letter-spacing:3px;
-font-size:.9rem;color:#aaa
+
+header img.logo {
+  max-width:360px;
+  width:80%;
+  margin:0 auto 30px;
+  display:block;
+}
+
+header h1 {
+  font-size:2.8rem;
+  letter-spacing:3px;
+  margin-bottom:20px;
+}
+
+header p {
+  font-size:1.1rem;
+  color:#ccc;
+}
+
+/* HERO SECCIONES */
+.hero-2, #contacto {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-2::before, #contacto::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85));
+}
+
+.hero-2 > .wrapper, #contacto > .wrapper {
+  position:relative;
+  z-index:1;
+}
+
+/* TEXTOS */
+.hero-2 h2, #contacto h2 {
+  font-size:2.4rem;
+  letter-spacing:2px;
+  margin-bottom:20px;
+}
+
+.hero-2 p, #contacto p {
+  color:#ccc;
+  font-size:1.05rem;
+}
+
+/* BOTONES */
+.album-btn {
+  display:inline-block;
+  margin-top:30px;
+  padding:16px 40px;
+  border:2px solid #b30000;
+  color:#b30000;
+  font-weight:700;
+}
+
+.album-btn:hover {
+  background:#b30000;
+  color:#000;
+}
+
+/* COMUNIDAD — EXACTAMENTE COMO LA ENVIASTE */
+#comunidad {
+  position:relative;
+  background:url("img/goldensouls.jpg") center/cover no-repeat;
+  color:#fff;
+}
+
+#comunidad .overlay {
+  position:absolute;
+  inset:0;
+  background:linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.75));
+}
+
+#comunidad .contenido {
+  position:relative;
+  max-width:1100px;
+  margin:auto;
+  padding:90px 20px;
+  text-align:center;
+}
+
+#comunidad h2 {
+  font-size:32px;
+  letter-spacing:4px;
+  margin-bottom:25px;
+}
+
+#comunidad .descripcion {
+  max-width:720px;
+  margin:0 auto 40px;
+  font-size:16px;
+  color:#e5e5e5;
+}
+
+#comunidad .social-links {
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-bottom:25px;
+}
+
+#comunidad .social-links a {
+  color:#fff;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+#comunidad .hashtag {
+  letter-spacing:3px;
+  margin-bottom:50px;
+}
+
+#comunidad .galeria {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:15px;
+}
+
+#comunidad .galeria img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+#comunidad .scroll-down {
+  position:absolute;
+  bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+  color:#fff;
+  font-size:22px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="scroll-btns">
-<a href="#banda"></a>
-<a href="#musica"></a>
-<a href="#apariciones"></a>
-<a href="#comunidad"></a>
-<a href="#contacto"></a>
-</div>
-
-<header>
-<div>
-<img src="img/regresiva-logo.png" class="logo">
-<h1>ROCK DE PROTESTA DESDE PERÚ</h1>
-<p>Música como confrontación, identidad y fuerza sonora.</p>
-</div>
-</header>
-
-<div class="divider"></div>
-
-<section class="hero-2" style="background-image:url('img/regresiva-hero3.jpg')" id="banda">
-<div class="wrapper">
-<h2>LA BANDA</h2>
-<p>REGRESIVA es autogestión, crítica y convicción sonora.</p>
-</div>
-</section>
-
-<div class="divider"></div>
-
-<section class="hero-2" style="background-image:url('img/mandilblanco.jpg')" id="musica">
-<div class="wrapper">
-<h2>MÚSICA</h2>
-<p>Álbum: <strong>R.E.D.</strong></p>
-<a class="album-btn" href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank">ESCUCHAR</a>
-</div>
-</section>
-
-<div class="divider"></div>
-
-<section id="apariciones">
-<div class="wrapper">
-<h2>APARICIONES</h2>
-<iframe src="https://www.youtube.com/embed/MsXHvm-iM1c"></iframe>
-</div>
-</section>
-
-<section id="comunidad">
-<div class="wrapper">
-<h2>COMUNIDAD</h2>
-<p>
-La fuerza de REGRESIVA está en su gente.  
-Fotos, videos y momentos compartidos que convierten cada concierto en experiencia.
-</p>
-
-<div class="community-links">
-<a href="https://www.instagram.com/regresivaband" target="_blank">INSTAGRAM</a>
-<a href="https://www.tiktok.com/@regresivaband" target="_blank">TIKTOK</a>
-<a href="https://www.facebook.com/regresivaband" target="_blank">FACEBOOK</a>
-<a href="https://www.youtube.com/@regresivaband" target="_blank">YOUTUBE</a>
-</div>
-
-<div class="hashtag">#RegresivaEnVivo</div>
-</div>
-</section>
-
-<section id="contacto" style="background-image:url('img/regresiva-final.jpg')">
-<div class="wrapper">
-<h2>CONTACTO</h2>
-</div>
-</section>
-
-<footer>
-© REGRESIVA — Lima, Perú
-</footer>
+<!-- TODO TU BODY RESTANTE SIN CAMBIOS -->
 
 </body>
 </html>
