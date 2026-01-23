@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omrpaz.github.io/regresivaperu/sitemap.xml
+Sitemap: https://omrpaz.github.io/REGRESIVAPERU/sitemap.xml
