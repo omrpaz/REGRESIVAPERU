@@ -2,16 +2,34 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>REGRESIVA | Banda peruana de rock de protesta</title>
-<meta name="description" content="REGRESIVA es una banda peruana de rock de protesta y metal alternativo. Escucha su álbum R.E.D., conoce su música y contacto directo con la banda.">
-<meta name="keywords" content="Regresiva, banda peruana, rock de protesta, metal peruano, música independiente, álbum R.E.D., rock Lima, música de protesta, merch, tienda de banda">
-<meta name="author" content="REGRESIVA">
 
-<!-- FAVICON (AJUSTE TÉCNICO, NO SEO) -->
+<meta name="description" content="REGRESIVA es una banda peruana de rock de protesta y metal alternativo. Escucha su álbum R.E.D., conoce su música y contacta directamente con la banda.">
+<meta name="keywords" content="Regresiva, banda peruana, rock de protesta, metal peruano, música independiente, álbum R.E.D., rock Lima">
+<meta name="author" content="REGRESIVA">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://regresivaperu.com/">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="REGRESIVA | Rock de protesta desde Perú">
+<meta property="og:description" content="Banda peruana de rock de protesta y metal alternativo. Escucha R.E.D. y conoce la música de REGRESIVA.">
+<meta property="og:url" content="https://regresivaperu.com/">
+<meta property="og:image" content="https://regresivaperu.com/img/regresiva-hero4.jpg">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="REGRESIVA | Banda peruana de rock de protesta">
+<meta name="twitter:description" content="Rock de protesta desde Perú. Música independiente, resistencia cultural y sonido frontal.">
+<meta name="twitter:image" content="https://regresivaperu.com/img/regresiva-hero4.jpg">
+
 <link rel="icon" type="image/png" href="regresiva-favicon.png">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <!-- SCHEMA JSON-LD -->
@@ -20,413 +38,13 @@
   "@context": "https://schema.org",
   "@type": "MusicGroup",
   "name": "REGRESIVA",
-  "url": "https://omrpaz.github.io/REGRESIVAPERU/",
+  "url": "https://regresivaperu.com/",
+  "genre": ["Rock de protesta", "Metal alternativo"],
   "sameAs": [
     "https://www.facebook.com/regresiva.banda",
     "https://www.instagram.com/regresivaband",
     "https://www.tiktok.com/@regresivaband",
     "https://open.spotify.com/artist/17qr9zMkyoXnJ9CqcVoPLt"
-  ],
-  "image": "https://omrpaz.github.io/REGRESIVAPERU/img/regresiva-logo.png",
-  "genre": "Rock de protesta, Metal alternativo",
-  "album": {
-    "@type": "MusicAlbum",
-    "name": "R.E.D."
-  }
+  ]
 }
 </script>
-
-<style>
-/* RESET */
-* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
-body { font-family:'Oswald', Arial, sans-serif; background:#000; color:#e5e5e5; line-height:1.6; }
-a { color:#b30000; text-decoration:none; }
-
-/* CONTENEDORES PARA MÁRGENES UNIFORMES */
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 20px;
-}
-
-/* BOTONES DE SCROLL */
-.scroll-btns {
-  position:fixed;
-  right:20px;
-  top:50%;
-  transform:translateY(-50%);
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-  z-index:999;
-}
-.scroll-btns a {
-  display:inline-block;
-  width:30px;
-  height:30px;
-  border-radius:50%;
-  background:#b30000;
-  border:2px solid #fff;
-  transition:.3s;
-}
-.scroll-btns a:hover { background:#fff; border-color:#b30000; }
-
-/* HERO PRINCIPAL */
-header {
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  background-image:url("img/regresiva-hero4.jpg");
-  background-size:cover;
-  background-position:center center;
-  position:relative;
-}
-header::before {
-  content:"";
-  position:absolute;
-  top:0; left:0; right:0; bottom:0;
-  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85));
-  z-index:0;
-}
-header > div { position:relative; z-index:1; padding:0 20px; }
-header img.emblema { width:90px; display:block; margin:0 auto 25px; border-radius:50%; }
-header img.logo { max-width:360px; width:80%; display:block; margin:0 auto 30px; }
-
-/* HERO SECCIONES FIJAS (SIN PARALLAX) */
-.hero-2, #contacto {
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  text-align:left;
-  position:relative;
-  padding:40px 20px;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center center;
-}
-.hero-2::before, #contacto::before {
-  content:"";
-  position:absolute;
-  top:0; left:0; right:0; bottom:0;
-  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85));
-  z-index:0;
-}
-.hero-2 > .wrapper, #contacto > .wrapper { position:relative; z-index:1; }
-
-/* TEXTOS HERO */
-header h1 { font-size:2.8rem; letter-spacing:3px; margin-bottom:20px; color:#fff; }
-header p { font-size:1.1rem; color:#ccc; margin-bottom:25px; }
-
-.hero-2 h2, #contacto h2 { font-size:2.4rem; letter-spacing:2px; margin-bottom:20px; color:#fff; }
-.hero-2 p, #contacto p { font-size:1.05rem; color:#ccc; margin-bottom:25px; }
-
-/* SECCIONES NORMALES */
-section h2 { font-size:2.2rem; margin-bottom:25px; text-transform:uppercase; letter-spacing:2px; }
-section p { font-size:1.05rem; color:#ccc; margin-bottom:25px; }
-
-/* DIVIDER */
-.divider { height:1px; background:#1a1a1a; }
-
-/* BOTONES */
-.album-btn, .contact-btn {
-  display:inline-block;
-  margin-top:30px;
-  padding:16px 40px;
-  font-weight:700;
-  letter-spacing:1px;
-  transition:.3s;
-}
-.album-btn { border:2px solid #b30000; color:#b30000; }
-.album-btn:hover { background:#b30000; color:#000; }
-.contact-btn { background:#1ebc57; color:#000; }
-
-/* EMBEDS */
-.embed { margin-top:40px; }
-iframe { width:100%; max-width:900px; height:380px; border:none; }
-
-/* BOTÓN YOUTUBE */
-.youtube-button { margin:25px 0 35px; }
-.youtube-button a {
-  display:inline-block;
-  padding:14px 24px;
-  border:1px solid #b30000;
-  color:#b30000;
-  font-size:14px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  transition:.3s;
-}
-.youtube-button a:hover { background:#b30000; color:#000; }
-
-/* FOOTER */
-footer { text-align:center; padding:60px 20px; font-size:.9rem; color:#777; border-top:1px solid #1a1a1a; }
-.social { margin-top:25px; }
-.social a { margin:0 10px; font-size:.85rem; letter-spacing:1px; color:#777; }
-.social a:hover { color:#b30000; }
-
-/* RESPONSIVE */
-@media (max-width:1024px) {
-  header h1 { font-size:2.4rem; }
-  .hero-2 h2, #contacto h2 { font-size:2.2rem; }
-  section h2 { font-size:2rem; }
-  section p, .hero-2 p, #contacto p { font-size:1rem; }
-  iframe { height:300px; }
-}
-@media (max-width:768px) {
-  header h1 { font-size:2rem; }
-  .hero-2, #contacto { background-attachment:scroll; background-position:center top; min-height:80vh; }
-  section h2 { font-size:1.8rem; }
-  section p, .hero-2 p, #contacto p { font-size:0.95rem; }
-}
-
-/* COMUNIDAD REVISADA */
-#comunidad {
-  position: relative;
-  min-height: 100vh; /* ocupa toda la pantalla */
-  background: url("img/goldensouls2.jpg") center center/cover no-repeat;
-  color: #ffffff;
-}
-
-#comunidad .overlay {
-  position: absolute;
-  inset: 0;
-  /* overlay más ligero para que se vea la foto completa */
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3));
-}
-
-#comunidad .contenido {
-  position: relative;
-  max-width: 1100px;
-  margin: auto;
-  padding: 90px 20px;
-  text-align: center;
-}
-
-#comunidad h2 {
-  font-size: 32px;
-  letter-spacing: 4px;
-  margin-bottom: 25px;
-}
-
-#comunidad .descripcion {
-  max-width: 720px;
-  margin: 0 auto 40px;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #e5e5e5;
-}
-
-#comunidad .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 25px;
-}
-
-#comunidad .social-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px; /* letras más grandes */
-  letter-spacing: 2px;
-  border-bottom: 1px solid transparent;
-}
-
-#comunidad .social-links a:hover {
-  border-bottom: 1px solid #ffffff;
-}
-
-#comunidad .hashtag {
-  font-size: 18px; /* más llamativo */
-  letter-spacing: 3px;
-  opacity: 0.95;
-  margin-bottom: 50px;
-}
-
-#comunidad .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
-
-#comunidad .galeria img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  filter: grayscale(20%);
-}
-
-#comunidad .scroll-down {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 22px;
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.6;
-}
-
-#comunidad .scroll-down:hover { opacity: 1; }
-  #banda {
-  position: relative;
-  background: url("img/regresiva-hero3.jpg") center center/cover no-repeat;
-  color: #ffffff;
-}
-
-#banda .overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.6)
-  );
-}
-
-#banda .wrapper {
-  position: relative;
-  max-width: 1100px;
-  margin: auto;
-  padding: 90px 20px;
-  text-align: center;
-}
-
-#banda h2 {
-  font-size: 32px;
-  letter-spacing: 4px;
-  margin-bottom: 25px;
-}
-
-#banda p {
-  max-width: 720px;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #e5e5e5;
-}
-
-
-
-/* AJUSTE TÉCNICO DE SCROLL (SIN DISEÑO) */
-#banda,
-#musica {
-  scroll-margin-top: 80px;
-}
-</style>
-</head>
-
-<body>
-
-<!-- BOTONES DE SCROLL -->
-<div class="scroll-btns">
-  <a href="#banda" title="Ir a La Banda"></a>
-  <a href="#musica" title="Ir a Música"></a>
-  <a href="#apariciones" title="Ir a Apariciones"></a>
-  <a href="#comunidad" title="Ir a Comunidad"></a>
-  <a href="#contacto" title="Ir a Contacto"></a>
-  <a href="https://regresiva.mozello.shop/tienda/" title="Ir a Tienda" target="_blank"></a>
-</div>
-
-<!-- HERO PRINCIPAL -->
-<header>
-  <div>
-    <img src="img/regresiva-emblema.png" alt="Emblema de Regresiva" class="emblema">
-    <img src="img/regresiva-logo.png" alt="Logo de Regresiva, banda peruana" class="logo">
-    <h1>ROCK DE PROTESTA DESDE PERÚ</h1>
-    <p>REGRESIVA es una banda peruana de rock de protesta y resistencia cultural. Música como confrontación, identidad y fuerza sonora independiente.</p>
-  </div>
-</header>
-
-<div class="divider"></div>
-
-<section id="banda" class="hero-2" style="background-image:url('img/regresiva-hero3.jpg');">
-  <div class="overlay"></div>
-  <div class="wrapper">
-    <h2>LA BANDA</h2>
-    <p>REGRESIVA surge como una respuesta directa al conformismo y la repetición. Con un sonido fuerte y un mensaje frontal, la banda construye música desde la autogestión, la crítica y la convicción.</p>
-  </div>
-</section>
-
-
-<!-- MÚSICA -->
-<section class="hero-2" style="background-image:url('img/mandilblanco.jpg');">
-  <div class="wrapper" id="musica">
-    <h2>MÚSICA</h2>
-    <p>El sonido de REGRESIVA se mueve entre el rock alternativo y el metal, con influencias de la música de protesta y una lírica enfocada en la crítica social. Su más reciente álbum, <strong>R.E.D.</strong>, representa una consolidación artística y sonora dentro de su discografía.</p>
-    <a href="https://regresivaband.bandcamp.com/album/r-e-d" target="_blank" class="album-btn">ESCUCHAR ÁLBUM R.E.D</a>
-    <div class="embed">
-      <iframe src="https://open.spotify.com/embed/artist/17qr9zMkyoXnJ9CqcVoPLt" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- APARICIONES -->
-<section id="apariciones">
-  <div class="wrapper">
-    <h2>APARICIONES Y ENTREVISTAS</h2>
-    <p>REGRESIVA ha participado en entrevistas y apariciones audiovisuales dentro de la escena independiente, abordando su postura crítica y proceso creativo.</p>
-
-    <div class="youtube-button">
-      <a href="https://music.youtube.com/channel/UCNfp7-vde13HedfsOqo2Vaw" target="_blank" rel="noopener">VER CANAL OFICIAL EN YOUTUBE MUSIC</a>
-    </div>
-
-    <div class="embed">
-      <iframe src="https://www.youtube.com/embed/MsXHvm-iM1c" allowfullscreen></iframe>
-    </div>
-    <div class="embed">
-      <iframe src="https://www.youtube.com/embed/J2Lsm-c2ITA" allowfullscreen></iframe>
-    </div>
-  </div>
-<section id="comunidad">
-  <div class="overlay"></div>
-  <div class="contenido">
-    <h2>COMUNIDAD</h2>
-    <p class="descripcion">
-      La fuerza de REGRESIVA está en su gente.<br>
-      Fotos, videos y momentos compartidos por nuestros fans hacen de cada concierto una experiencia única.
-    </p>
-
-    <div class="social-links">
-      <a href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://tiktok.com/@TU_USUARIO" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://facebook.com/TU_PAGINA" target="_blank" rel="noopener">Facebook</a>
-    </div>
-
-    <div class="hashtag">
-      <a href="https://www.instagram.com/explore/tags/regresivaenvivo/" target="_blank" rel="noopener" style="color:#fff; text-decoration:underline;">
-        #RegresivaEnVivo
-      </a>
-    </div>
-  </div>
-  <a href="#contacto" class="scroll-down">↓</a>
-</section>
-
-
-
-<!-- CONTACTO -->
-<section id="contacto" style="background-image:url('img/regresiva-final.jpg');">
-  <div class="wrapper">
-    <h2>CONTACTO</h2>
-    <p>Para comunicación directa con la banda.</p>
-    <a href="https://wa.me/51906413899" target="_blank" class="contact-btn">WhatsApp</a>
-  </div>
-</section>
-
-<footer>
-  <div class="wrapper">
-    © REGRESIVA – Lima, Perú
-    <div class="social">
-      <a href="https://www.facebook.com/regresiva.banda" target="_blank">FACEBOOK</a>
-      <a href="https://www.instagram.com/regresivaband" target="_blank">INSTAGRAM</a>
-      <a href="https://www.tiktok.com/@regresivaband" target="_blank">TIKTOK</a>
-      <a href="https://open.spotify.com/artist/17qr9zMkyoXnJ9CqcVoPLt" target="_blank">SPOTIFY</a>
-    </div>
-  </div>
-</footer>
-
-</body>
-</html>
