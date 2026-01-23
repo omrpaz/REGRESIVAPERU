@@ -110,44 +110,33 @@ padding: 80px 20px;
 /* BOTONES DE SCROLL */
 
 .scroll-btns {
-
-position:fixed;
-
-right:20px;
-
-top:50%;
-
-transform:translateY(-50%);
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
-z-index:999;
-
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row; /* horizontal */
+  gap: 10px; /* espacio entre estrellas */
+  z-index: 999;
 }
 
 .scroll-btns a {
-
-display:inline-block;
-
-width:30px;
-
-height:30px;
-
-border-radius:50%;
-
-background:#b30000;
-
-border:2px solid #fff;
-
-transition:.3s;
-
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 24px; /* para la estrella */
+  line-height: 30px;
+  text-align: center;
+  color: #b30000;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.scroll-btns a:hover { background:#fff; border-color:#b30000; }
+.scroll-btns a:hover {
+  color: #ff0000; /* rojo brillante al pasar el mouse */
+  transform: scale(1.2); /* pequeño efecto */
+}
+
 
 
 
